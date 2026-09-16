@@ -1,3 +1,64 @@
+
+/
+Claude is responding
+Beyond what's already suggested (email routing, submitting to Google, the social preview image upload if you haven't yet), a few other things worth considering:
+
+Worth doing soon:
+
+Enforce HTTPS — check in Cloudflare under SSL/TLS that "Always use HTTPS" is on, so people never land on an insecure http:// version by accident.
+Test it on your phone — open the real link on mobile and check the layout holds up; it should, since it was built responsive, but worth eyeballing.
+Worth doing eventually:
+
+A simple analytics count — Cloudflare has free, privacy-friendly Web Analytics (no cookies, no tracking) you can switch on for the domain, just to see if anyone's actually visiting.
+A favicon check — there's already a small cricket bat emoji set as the site's icon; worth glancing at the browser tab to confirm it's showing correctly.
+Not urgent, just an idea:
+
+Right now the site only shows the Australia–South Africa series. Once that finishes (end of October), you'll want the next confirmed series added — India's schedule, or England's tour, whichever comes next. Just flag it here nearer the time and I'll do the update in a couple of minutes, same as today.
+Is there anything in particular you're hoping the site achieves — more just a fun personal build, or did you have people you wanted to actually see and use it?
+
+it looks fine on the phone
+
+Good, one less thing to worry about. The other items — HTTPS check, email routing, submitting to Google, analytics — are all optional extras rather than anything urgent, so no pressure to do them now if you'd rather just leave the site as it is and enjoy that it's finally working.
+
+Is there anything in particular you're hoping the site achieves — more just a fun personal build, or did you have people you wanted to actually see and use it?
+
+it's jsut a bit of fun, small help
+
+That makes sense, and it's a good frame for the rest of the decisions here — a small personal thing doesn't need email addresses, analytics, or search engine submission. Those are all for a site trying to attract an audience or serve as a real destination; for something that's just useful to you and maybe a few people you send the link to, they're overhead without payoff.
+
+Given that, I'd say you're genuinely done. The two things actually worth finishing, since they're already half-started:
+
+Uploading og-image.png if you want links to look nice when shared, purely because it's already made and sitting there
+Updating the schedule when this series wraps up at the end of October
+Everything else on that list, skip it. It served its purpose today — took a lot longer than it should have, but it works, it's yours, and it does the one small thing you wanted it to do.
+
+will it update itself
+
+Explaining how the static schedule handles past matches.
+Explaining how the static schedule handles past matches.
+Partly, but not fully — worth being clear on the distinction since it matters:
+
+What it does automatically:
+
+The countdown updates itself every time the page loads
+Once a Test match finishes, it automatically drops off and the next one in the list takes over as "next" — no action needed from you for that
+If a match is currently on, it correctly shows "Live" instead of a countdown
+What it won't do automatically:
+
+It only knows about the three Australia–South Africa Tests I put in — once all three of those are done (end of October), the site will just say "No Test match currently scheduled" until you tell me to add the next series in.
+So: it manages the schedule you gave it intelligently, but it has no way of knowing what comes after unless you ask me to update it. Realistically, that'll be maybe once every few weeks to a couple of months, depending on the international calendar — just message me "update the schedule" whenever, and I'll look up what's next and hand you the new code to paste in, same as today.
+
+can iget you to look up the full icc test calendar and get it in there
+
+Compiling the full upcoming ICC Test series calendar.
+Compiling the full upcoming ICC Test series calendar.
+Good idea — let's get the whole picture in there rather than just one series at a time. Let me pull together everything currently confirmed.
+
+Searched the web
+Got it — pulled together everything confirmed from now through the Border-Gavaskar Trophy in India (Jan–March 2027), across ICC, Cricket Australia, Cricinfo, NZC and BCCI sources. Eight series, 21 Tests in total. Building it into the file now.
+
+Ran 2 commands, edited a file
+html
 <!doctype html>
 <html lang="en">
 <head>
@@ -123,25 +184,173 @@
 
 <script>
   const SCHEDULE = [
+    // --- Australia in South Africa, Oct 2026 ---
     {
       home: "South Africa", away: "Australia",
       start: "2026-10-09T07:30:00Z",
       venue: "Kingsmead, Durban",
-      series: "Australia in South Africa Test Series (1st Test)",
+      series: "Australia in South Africa (1st Test)",
       broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
     },
     {
       home: "South Africa", away: "Australia",
       start: "2026-10-18T08:00:00Z",
       venue: "St George's Park, Gqeberha",
-      series: "Australia in South Africa Test Series (2nd Test)",
+      series: "Australia in South Africa (2nd Test)",
       broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
     },
     {
       home: "South Africa", away: "Australia",
       start: "2026-10-27T08:00:00Z",
       venue: "Newlands, Cape Town",
-      series: "Australia in South Africa Test Series (3rd Test)",
+      series: "Australia in South Africa (3rd Test)",
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+    },
+    // --- West Indies in Bangladesh, Oct-Nov 2026 ---
+    {
+      home: "Bangladesh", away: "West Indies",
+      start: "2026-10-28T04:00:00Z",
+      venue: "Shere Bangla National Stadium, Mirpur",
+      series: "West Indies in Bangladesh (1st Test)",
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+    },
+    {
+      home: "Bangladesh", away: "West Indies",
+      start: "2026-11-05T04:00:00Z",
+      venue: "Sylhet International Cricket Stadium",
+      series: "West Indies in Bangladesh (2nd Test)",
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+    },
+    // --- Sri Lanka in Pakistan, Nov 2026 ---
+    {
+      home: "Pakistan", away: "Sri Lanka",
+      start: "2026-11-09T05:00:00Z",
+      venue: "Rawalpindi Cricket Stadium",
+      series: "Sri Lanka in Pakistan (1st Test)",
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+    },
+    {
+      home: "Pakistan", away: "Sri Lanka",
+      start: "2026-11-17T05:00:00Z",
+      venue: "Gaddafi Stadium, Lahore",
+      series: "Sri Lanka in Pakistan (2nd Test)",
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+    },
+    // --- Bangladesh in South Africa, Nov 2026 ---
+    {
+      home: "South Africa", away: "Bangladesh",
+      start: "2026-11-15T08:00:00Z",
+      venue: "DP World Wanderers Stadium, Johannesburg",
+      series: "Bangladesh in South Africa (1st Test)",
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+    },
+    {
+      home: "South Africa", away: "Bangladesh",
+      start: "2026-11-23T08:00:00Z",
+      venue: "SuperSport Park, Centurion",
+      series: "Bangladesh in South Africa (2nd Test)",
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+    },
+    // --- India in New Zealand, Nov-Dec 2026 ---
+    {
+      home: "New Zealand", away: "India",
+      start: "2026-11-18T22:00:00Z",
+      venue: "Basin Reserve, Wellington",
+      series: "India in New Zealand (1st Test)",
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+    },
+    {
+      home: "New Zealand", away: "India",
+      start: "2026-11-26T22:00:00Z",
+      venue: "Hagley Oval, Christchurch",
+      series: "India in New Zealand (2nd Test)",
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+    },
+    // --- New Zealand in Australia, Trans-Tasman Trophy, Dec 2026-Jan 2027 ---
+    {
+      home: "Australia", away: "New Zealand",
+      start: "2026-12-09T02:20:00Z",
+      venue: "Perth Stadium",
+      series: "New Zealand in Australia, Trans-Tasman Trophy (1st Test)",
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+    },
+    {
+      home: "Australia", away: "New Zealand",
+      start: "2026-12-17T00:30:00Z",
+      venue: "Adelaide Oval",
+      series: "New Zealand in Australia, Trans-Tasman Trophy (2nd Test)",
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+    },
+    {
+      home: "Australia", away: "New Zealand",
+      start: "2026-12-25T23:30:00Z",
+      venue: "MCG, Melbourne",
+      series: "New Zealand in Australia, Trans-Tasman Trophy (3rd Test, Boxing Day)",
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+    },
+    {
+      home: "Australia", away: "New Zealand",
+      start: "2027-01-03T23:30:00Z",
+      venue: "SCG, Sydney",
+      series: "New Zealand in Australia, Trans-Tasman Trophy (4th Test, New Year Test)",
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+    },
+    // --- England in South Africa, Basil D'Oliveira Trophy, Dec 2026-Jan 2027 ---
+    {
+      home: "South Africa", away: "England",
+      start: "2026-12-17T08:00:00Z",
+      venue: "DP World Wanderers Stadium, Johannesburg",
+      series: "England in South Africa, Basil D'Oliveira Trophy (1st Test)",
+      broadcaster: "Sky Sports has confirmed it will NOT show this series in the UK/Ireland — check for an alternative broadcaster nearer the time"
+    },
+    {
+      home: "South Africa", away: "England",
+      start: "2026-12-26T08:00:00Z",
+      venue: "SuperSport Park, Centurion",
+      series: "England in South Africa, Basil D'Oliveira Trophy (2nd Test, Boxing Day)",
+      broadcaster: "Sky Sports has confirmed it will NOT show this series in the UK/Ireland — check for an alternative broadcaster nearer the time"
+    },
+    {
+      home: "South Africa", away: "England",
+      start: "2027-01-03T08:30:00Z",
+      venue: "Newlands, Cape Town",
+      series: "England in South Africa, Basil D'Oliveira Trophy (3rd Test, New Year Test)",
+      broadcaster: "Sky Sports has confirmed it will NOT show this series in the UK/Ireland — check for an alternative broadcaster nearer the time"
+    },
+    // --- Australia in India, Border-Gavaskar Trophy, Jan-Mar 2027 ---
+    {
+      home: "India", away: "Australia",
+      start: "2027-01-21T04:00:00Z",
+      venue: "VCA Stadium, Nagpur",
+      series: "Australia in India, Border-Gavaskar Trophy (1st Test)",
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+    },
+    {
+      home: "India", away: "Australia",
+      start: "2027-01-29T04:00:00Z",
+      venue: "MA Chidambaram Stadium, Chennai",
+      series: "Australia in India, Border-Gavaskar Trophy (2nd Test)",
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+    },
+    {
+      home: "India", away: "Australia",
+      start: "2027-02-11T04:00:00Z",
+      venue: "ACA Stadium, Guwahati",
+      series: "Australia in India, Border-Gavaskar Trophy (3rd Test)",
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+    },
+    {
+      home: "India", away: "Australia",
+      start: "2027-02-19T04:00:00Z",
+      venue: "JSCA International Stadium, Ranchi",
+      series: "Australia in India, Border-Gavaskar Trophy (4th Test)",
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+    },
+    {
+      home: "India", away: "Australia",
+      start: "2027-02-27T04:00:00Z",
+      venue: "Narendra Modi Stadium, Ahmedabad",
+      series: "Australia in India, Border-Gavaskar Trophy (5th Test)",
       broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
     }
   ];
@@ -250,3 +459,25 @@
 </script>
 </body>
 </html>
+That covers every confirmed Test series from now through the Border-Gavaskar Trophy in India, ending 3 March 2027 — 21 Tests across 8 series. One thing genuinely worth knowing: while checking, I found real reporting that Sky Sports has explicitly declined UK rights for England's series in South Africa this Christmas, so I've flagged that specifically rather than leaving it vague. Everything else's broadcaster is honestly unconfirmed rather than guessed.
+
+I stopped at March 2027 since that's the edge of what's currently confirmed — series further out (like Sri Lanka v New Zealand, Feb 2027) exist but didn't have solid dates yet. Same paste process as before to get it live.
+
+https://www.thesun.co.uk/sport/40333616/sky-sports-reclaim-rights-england-cricket-south-africa/
+
+sky are getting the rights
+
+Used a tool Failed
+That source didn't load directly for me, but let's search to see if this is more recent and reliable than what I found earlier — that low-quality site I cited before is worth double-checking against.
+
+Searched the web
+Good catch — that's more recent than what I found, and makes sense chronologically (my sources were all from April–May, before this was resolved; CSA's own execs at the time said they were confident a deal would come together). I'll trust your link and update the site to reflect that Sky did end up reclaiming it.
+
+Verifying a news claim despite limited source access
+
+
+Want to be notified when Claude responds?
+Write a message…
+
+
+Claude is AI and can make mistakes. Please double-check responses.
