@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>When Is Test Cricket On Next</title>
+<meta name="description" content="The next Test match — or two — and when they start." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏏</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --pavilion: #17332a;
+    --pavilion-deep: #0e211b;
+    --cream: #f2ead4;
+    --cream-dim: #cfc4a4;
+    --ball: #b3272c;
+    --gold: #c8a35a;
+    --rule: rgba(242, 234, 212, 0.18);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--pavilion);
+    color: var(--cream);
+    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+    min-height: 100%;
+  }
+
+  body {
+    background-image:
+      radial-gradient(ellipse at top, rgba(200, 163, 90, 0.10), transparent 55%),
+      linear-gradient(var(--pavilion), var(--pavilion-deep));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1.25rem 4rem;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 720px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 2.75rem;
+  }
+
+  .kicker {
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    color: var(--gold);
+    margin: 0 0 0.6rem;
+  }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(2.1rem, 6vw, 3.1rem);
+    line-height: 1.08;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--ball);
+  }
+
+  #status {
+    text-align: center;
+    color: var(--cream-dim);
+    padding: 3rem 0;
+    font-size: 0.95rem;
+  }
+
+  #status.error {
+    color: #e0b3ad;
+  }
+
+  .matches {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .match {
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    padding: 1.75rem 1.75rem 1.5rem;
+    background: linear-gradient(180deg, rgba(242,234,212,0.035), rgba(242,234,212,0.01));
+    position: relative;
+  }
+
+  .match::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--gold);
+  }
+
+  .teams {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(1.3rem, 4vw, 1.65rem);
+    margin: 0 0 0.9rem;
+    letter-spacing: -0.01em;
+  }
+
+  .teams .vs {
+    color: var(--cream-dim);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.75em;
+    margin: 0 0.35em;
+  }
+
+  .countdown-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    margin: 0 0 1.1rem;
+    padding-bottom: 1.1rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .countdown-num {
+    font-family: 'Fraunces', serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .countdown-label {
+    color: var(--cream-dim);
+    font-size: 0.95rem;
+  }
+
+  .countdown-row.live .countdown-num {
+    color: var(--ball);
+  }
+
+  dl.details {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.55rem 1rem;
+    font-size: 0.92rem;
+  }
+
+  dl.details dt {
+    color: var(--cream-dim);
+  }
+
+  dl.details dd {
+    margin: 0;
+  }
+
+  footer {
+    margin-top: 3rem;
+    text-align: center;
+    color: var(--cream-dim);
+    font-size: 0.8rem;
+    opacity: 0.75;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .match { animation: rise 0.5s ease-out both; }
+    .match:nth-child(2) { animation-delay: 0.08s; }
+  }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="kicker">whenistestcricketonnext.com</p>
+      <h1>When is Test cricket <em>on</em> next?</h1>
+    </header>
+
+    <div id="status">Checking the schedule…</div>
+    <div id="matches" class="matches" hidden></div>
+
+    <footer>Updates automatically · times shown in your local timezone</footer>
+  </div>
+
+<script>
+(function () {
+  var statusEl = document.getElementById('status');
+  var matchesEl = document.getElementById('matches');
+
+  function fmtDate(iso) {
+    var d = new Date(iso);
+    return d.toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  }
+
+  function fmtTime(iso) {
+    var d = new Date(iso);
+    return d.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
+  }
+
+  function countdown(iso) {
+    var diff = new Date(iso).getTime() - Date.now();
+    if (diff <= 0) return { live: true, text: 'In progress' };
+    var days = Math.floor(diff / 86400000);
+    var hours = Math.floor((diff % 86400000) / 3600000);
+    if (days > 0) return { live: false, num: days, label: days === 1 ? 'day' : 'days', extra: hours + 'h' };
+    var mins = Math.floor((diff % 3600000) / 60000);
+    return { live: false, num: hours, label: hours === 1 ? 'hour' : 'hours', extra: mins + 'm' };
+  }
+
+  function renderMatch(m) {
+    var cd = countdown(m.start);
+    var el = document.createElement('article');
+    el.className = 'match';
+
+    var teams = document.createElement('p');
+    teams.className = 'teams';
+    teams.innerHTML = escapeHtml(m.home) + '<span class="vs">v</span>' + escapeHtml(m.away);
+    el.appendChild(teams);
+
+    var row = document.createElement('div');
+    row.className = 'countdown-row' + (cd.live ? ' live' : '');
+    if (cd.live) {
+      row.innerHTML = '<span class="countdown-num">Live</span><span class="countdown-label">match in progress</span>';
+    } else {
+      row.innerHTML =
+        '<span class="countdown-num">' + cd.num + '</span>' +
+        '<span class="countdown-label">' + cd.label + ' (' + cd.extra + ') to go</span>';
+    }
+    el.appendChild(row);
+
+    var dl = document.createElement('dl');
+    dl.className = 'details';
+
+    function addRow(term, desc) {
+      var dt = document.createElement('dt'); dt.textContent = term;
+      var dd = document.createElement('dd'); dd.textContent = desc;
+      dl.appendChild(dt); dl.appendChild(dd);
+    }
+
+    addRow('Starts', fmtDate(m.start) + ', ' + fmtTime(m.start));
+    if (m.venue) addRow('Venue', m.venue);
+    if (m.series) addRow('Series', m.series);
+    if (m.broadcaster) addRow('Watch on', m.broadcaster);
+
+    el.appendChild(dl);
+    return el;
+  }
+
+  function escapeHtml(s) {
+    var d = document.createElement('div');
+    d.textContent = s == null ? '' : s;
+    return d.innerHTML;
+  }
+
+  fetch('/api/next-tests')
+    .then(function (r) {
+      if (!r.ok) throw new Error('bad-response');
+      return r.json();
+    })
+    .then(function (data) {
+      var list = (data && data.matches) || [];
+      if (!list.length) {
+        statusEl.textContent = "No Test match currently scheduled. Check back soon.";
+        return;
+      }
+      statusEl.hidden = true;
+      matchesEl.hidden = false;
+      list.forEach(function (m) { matchesEl.appendChild(renderMatch(m)); });
+    })
+    .catch(function () {
+      statusEl.textContent = "Couldn't load the schedule right now — try refreshing in a bit.";
+      statusEl.className = 'error';
+    });
+})();
+</script>
+</body>
+</html>
