@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>When Is Test Cricket On Next</title>
+<meta name="description" content="The next Test match — or two — and when they start." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏏</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --pavilion: #17332a;
+    --pavilion-deep: #0e211b;
+    --cream: #f2ead4;
+    --cream-dim: #cfc4a4;
+    --ball: #b3272c;
+    --gold: #c8a35a;
+    --rule: rgba(242, 234, 212, 0.18);
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--pavilion);
+    color: var(--cream);
+    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+    min-height: 100%;
+  }
+  body {
+    background-image:
+      radial-gradient(ellipse at top, rgba(200, 163, 90, 0.10), transparent 55%),
+      linear-gradient(var(--pavilion), var(--pavilion-deep));
+    display: flex; flex-direction: column; align-items: center;
+    padding: 3rem 1.25rem 4rem;
+  }
+  .wrap { width: 100%; max-width: 720px; }
+  header { text-align: center; margin-bottom: 2.75rem; }
+  .kicker { font-size: 0.8rem; letter-spacing: 0.04em; color: var(--gold); margin: 0 0 0.6rem; }
+  .today { font-size: 0.85rem; color: var(--cream-dim); margin: 0.9rem 0 0; }
+  h1 {
+    font-family: 'Fraunces', serif; font-weight: 600;
+    font-size: clamp(2.1rem, 6vw, 3.1rem); line-height: 1.08;
+    margin: 0; letter-spacing: -0.01em;
+  }
+  h1 em { font-style: italic; color: var(--ball); }
+  #status { text-align: center; color: var(--cream-dim); padding: 3rem 0; font-size: 0.95rem; }
+  .matches { display: flex; flex-direction: column; gap: 1.5rem; }
+  .match {
+    border: 1px solid var(--rule); border-radius: 2px;
+    padding: 1.75rem 1.75rem 1.5rem;
+    background: linear-gradient(180deg, rgba(242,234,212,0.035), rgba(242,234,212,0.01));
+    position: relative;
+  }
+  .match::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0;
+    height: 3px; background: var(--gold);
+  }
+  .teams {
+    font-family: 'Fraunces', serif; font-weight: 600;
+    font-size: clamp(1.3rem, 4vw, 1.65rem); margin: 0 0 0.9rem; letter-spacing: -0.01em;
+  }
+  .teams .vs { color: var(--cream-dim); font-style: italic; font-weight: 400; font-size: 0.75em; margin: 0 0.35em; }
+  .countdown-row {
+    display: flex; align-items: baseline; gap: 0.6rem;
+    margin: 0 0 1.1rem; padding-bottom: 1.1rem; border-bottom: 1px solid var(--rule);
+  }
+  .countdown-num { font-family: 'Fraunces', serif; font-size: 2.6rem; font-weight: 700; color: var(--gold); line-height: 1; }
+  .countdown-label { color: var(--cream-dim); font-size: 0.95rem; }
+  .countdown-row.live .countdown-num { color: var(--ball); }
+  dl.details { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 0.55rem 1rem; font-size: 0.92rem; }
+  dl.details dt { color: var(--cream-dim); }
+  dl.details dd { margin: 0; }
+  footer { margin-top: 3rem; text-align: center; color: var(--cream-dim); font-size: 0.8rem; opacity: 0.75; }
+  @media (prefers-reduced-motion: no-preference) {
+    .match { animation: rise 0.5s ease-out both; }
+    .match:nth-child(2) { animation-delay: 0.08s; }
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="kicker">whenistestcricketonnext.com</p>
+      <h1>When is Test cricket <em>on</em> next?</h1>
+      <p id="today" class="today"></p>
+    </header>
+
+    <div id="status" hidden>No Test match currently scheduled. Check back soon.</div>
+    <div id="matches" class="matches"></div>
+
+    <footer>Schedule updated by hand · times shown in your local timezone</footer>
+  </div>
+
+<script>
+  // ---- The schedule itself. -------------------------------------------
+  // No API, no dependency on any third party — this array is the whole
+  // data source. Update it here (dates as ISO 8601 with UTC offset,
+  // "Z" = UTC) whenever a new Test series is confirmed.
+  //
+  // Start times are the scheduled first-ball time. If unsure, using the
+  // 09:00 or 10:00 local start of that ground on day 1 is a safe default.
+  const SCHEDULE = [
+    {
+      home: "South Africa", away: "Australia",
+      start: "2026-10-09T08:00:00Z",
+      venue: "Kingsmead, Durban",
+      series: "Australia in South Africa Test Series (1st Test)",
+      broadcaster: "Check Sky Sports Cricket or TNT Sports listings"
+    },
+    {
+      home: "South Africa", away: "Australia",
+      start: "2026-10-18T08:00:00Z",
+      venue: "St George's Park, Gqeberha",
+      series: "Australia in South Africa Test Series (2nd Test)",
+      broadcaster: "Check Sky Sports Cricket or TNT Sports listings"
+    },
+    {
+      home: "South Africa", away: "Australia",
+      start: "2026-10-27T08:00:00Z",
+      venue: "Newlands, Cape Town",
+      series: "Australia in South Africa Test Series (3rd Test)",
+      broadcaster: "Check Sky Sports Cricket or TNT Sports listings"
+    }
+  ];
+  // A Test match typically runs 5 days; treat it as "in progress" (not
+  // yet finished) for this long after its start time.
+  const MATCH_DURATION_MS = 5 * 24 * 60 * 60 * 1000;
+  // Treat matches starting within this long of each other as concurrent,
+  // so up to two can show side by side.
+  const CONCURRENT_WINDOW_MS = 4 * 24 * 60 * 60 * 1000;
+
+  var statusEl = document.getElementById('status');
+  var matchesEl = document.getElementById('matches');
+
+  function fmtDate(iso) {
+    var d = new Date(iso);
+    return d.toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  }
+  function fmtTime(iso) {
+    var d = new Date(iso);
+    return d.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
+  }
+  function countdown(iso) {
+    var diff = new Date(iso).getTime() - Date.now();
+    if (diff <= 0) return { live: true };
+    var days = Math.floor(diff / 86400000);
+    var hours = Math.floor((diff % 86400000) / 3600000);
+    if (days > 0) return { live: false, num: days, label: days === 1 ? 'day' : 'days', extra: hours + 'h' };
+    var mins = Math.floor((diff % 3600000) / 60000);
+    return { live: false, num: hours, label: hours === 1 ? 'hour' : 'hours', extra: mins + 'm' };
+  }
+
+  function renderMatch(m) {
+    var cd = countdown(m.start);
+    var el = document.createElement('article');
+    el.className = 'match';
+
+    var teams = document.createElement('p');
+    teams.className = 'teams';
+    teams.innerHTML = escapeHtml(m.home) + '<span class="vs">v</span>' + escapeHtml(m.away);
+    el.appendChild(teams);
+
+    var row = document.createElement('div');
+    row.className = 'countdown-row' + (cd.live ? ' live' : '');
+    row.innerHTML = cd.live
+      ? '<span class="countdown-num">Live</span><span class="countdown-label">match in progress</span>'
+      : '<span class="countdown-num">' + cd.num + '</span><span class="countdown-label">' + cd.label + ' (' + cd.extra + ') to go</span>';
+    el.appendChild(row);
+
+    var dl = document.createElement('dl');
+    dl.className = 'details';
+    function addRow(term, desc) {
+      var dt = document.createElement('dt'); dt.textContent = term;
+      var dd = document.createElement('dd'); dd.textContent = desc;
+      dl.appendChild(dt); dl.appendChild(dd);
+    }
+    addRow('Starts', fmtDate(m.start) + ', ' + fmtTime(m.start));
+    if (m.venue) addRow('Venue', m.venue);
+    if (m.series) addRow('Series', m.series);
+    if (m.broadcaster) addRow('Watch on', m.broadcaster);
+    el.appendChild(dl);
+    return el;
+  }
+
+  function escapeHtml(s) {
+    var d = document.createElement('div');
+    d.textContent = s == null ? '' : s;
+    return d.innerHTML;
+  }
+
+  document.getElementById('today').textContent = 'Today: ' + new Date().toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+
+  var now = Date.now();
+  var upcoming = SCHEDULE
+    .filter(function (m) { return new Date(m.start).getTime() + MATCH_DURATION_MS > now; })
+    .sort(function (a, b) { return new Date(a.start) - new Date(b.start); });
+
+  var selected = [];
+  if (upcoming.length) {
+    var soonest = new Date(upcoming[0].start).getTime();
+    selected = upcoming
+      .filter(function (m) { return new Date(m.start).getTime() - soonest <= CONCURRENT_WINDOW_MS; })
+      .slice(0, 2);
+  }
+
+  if (!selected.length) {
+    statusEl.hidden = false;
+  } else {
+    selected.forEach(function (m) { matchesEl.appendChild(renderMatch(m)); });
+  }
+</script>
+</body>
+</html>
