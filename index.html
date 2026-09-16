@@ -129,21 +129,21 @@
       start: "2026-10-09T07:30:00Z",
       venue: "Kingsmead, Durban",
       series: "Australia in South Africa (1st Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+      broadcasters: { sa: "SuperSport", au: "Fox Cricket / Kayo Sports", uk: "Not yet confirmed" }
     },
     {
       home: "South Africa", away: "Australia",
       start: "2026-10-18T08:00:00Z",
       venue: "St George's Park, Gqeberha",
       series: "Australia in South Africa (2nd Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+      broadcasters: { sa: "SuperSport", au: "Fox Cricket / Kayo Sports", uk: "Not yet confirmed" }
     },
     {
       home: "South Africa", away: "Australia",
       start: "2026-10-27T08:00:00Z",
       venue: "Newlands, Cape Town",
       series: "Australia in South Africa (3rd Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
+      broadcasters: { sa: "SuperSport", au: "Fox Cricket / Kayo Sports", uk: "Not yet confirmed" }
     },
     // --- West Indies in Bangladesh, Oct-Nov 2026 ---
     {
@@ -343,7 +343,16 @@
     addRow('Starts', fmtDate(m.start) + ', ' + fmtTime(m.start));
     if (m.venue) addRow('Venue', m.venue);
     if (m.series) addRow('Series', m.series);
-    if (m.broadcaster) addRow('Watch on', m.broadcaster);
+    if (m.broadcasters) {
+      var b = m.broadcasters;
+      var parts = [];
+      if (b.sa) parts.push('SA: ' + b.sa);
+      if (b.au) parts.push('AUS: ' + b.au);
+      if (b.uk) parts.push('UK/Ire: ' + b.uk);
+      addRow('Watch on', parts.join(' · '));
+    } else if (m.broadcaster) {
+      addRow('Watch on', m.broadcaster);
+    }
     el.appendChild(dl);
     return el;
   }
