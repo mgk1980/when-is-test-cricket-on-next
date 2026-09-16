@@ -240,21 +240,21 @@
       start: "2026-12-17T08:00:00Z",
       venue: "DP World Wanderers Stadium, Johannesburg",
       series: "England in South Africa, Basil D'Oliveira Trophy (1st Test)",
-      broadcaster: "Sky Sports has confirmed it will NOT show this series in the UK/Ireland — check for an alternative broadcaster nearer the time"
+      broadcaster: "Sky Sports Cricket"
     },
     {
       home: "South Africa", away: "England",
       start: "2026-12-26T08:00:00Z",
       venue: "SuperSport Park, Centurion",
       series: "England in South Africa, Basil D'Oliveira Trophy (2nd Test, Boxing Day)",
-      broadcaster: "Sky Sports has confirmed it will NOT show this series in the UK/Ireland — check for an alternative broadcaster nearer the time"
+      broadcaster: "Sky Sports Cricket"
     },
     {
       home: "South Africa", away: "England",
       start: "2027-01-03T08:30:00Z",
       venue: "Newlands, Cape Town",
       series: "England in South Africa, Basil D'Oliveira Trophy (3rd Test, New Year Test)",
-      broadcaster: "Sky Sports has confirmed it will NOT show this series in the UK/Ireland — check for an alternative broadcaster nearer the time"
+      broadcaster: "Sky Sports Cricket"
     },
     // --- Australia in India, Border-Gavaskar Trophy, Jan-Mar 2027 ---
     {
@@ -381,7 +381,7 @@
   if (rest.length) {
     var upcomingWrap = document.getElementById('upcoming-wrap');
     var upcomingList = document.getElementById('upcoming-list');
-    rest.forEach(function (m) {
+    rest.slice(0, 5).forEach(function (m) {
       var li = document.createElement('li');
       var teamsSpan = document.createElement('span');
       teamsSpan.className = 'upcoming-teams';
