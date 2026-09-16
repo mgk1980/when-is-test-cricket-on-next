@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>When Is Test Cricket On Next</title>
 <meta name="description" content="The next Test match — or two — and when they start." />
+<meta property="og:title" content="When is Test cricket on next?" />
+<meta property="og:description" content="The next scheduled Test match — countdown, venue, and how to watch." />
+<meta property="og:image" content="https://whenistestcricketonnext.com/og-image.png" />
+<meta property="og:url" content="https://whenistestcricketonnext.com/" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="When is Test cricket on next?" />
+<meta name="twitter:description" content="The next scheduled Test match — countdown, venue, and how to watch." />
+<meta name="twitter:image" content="https://whenistestcricketonnext.com/og-image.png" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏏</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -114,13 +122,6 @@
   </div>
 
 <script>
-  // ---- The schedule itself. -------------------------------------------
-  // No API, no dependency on any third party — this array is the whole
-  // data source. Update it here (dates as ISO 8601 with UTC offset,
-  // "Z" = UTC) whenever a new Test series is confirmed.
-  //
-  // Start times are the scheduled first-ball time. If unsure, using the
-  // 09:00 or 10:00 local start of that ground on day 1 is a safe default.
   const SCHEDULE = [
     {
       home: "South Africa", away: "Australia",
@@ -144,11 +145,7 @@
       broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
     }
   ];
-  // A Test match typically runs 5 days; treat it as "in progress" (not
-  // yet finished) for this long after its start time.
   const MATCH_DURATION_MS = 5 * 24 * 60 * 60 * 1000;
-  // Treat matches starting within this long of each other as concurrent,
-  // so up to two can show side by side.
   const CONCURRENT_WINDOW_MS = 4 * 24 * 60 * 60 * 1000;
 
   var statusEl = document.getElementById('status');
@@ -165,11 +162,10 @@
   function countdown(iso) {
     var diff = new Date(iso).getTime() - Date.now();
     if (diff <= 0) return { live: true };
-    var days = Math.floor(diff / 86400000);
-    var hours = Math.floor((diff % 86400000) / 3600000);
-    if (days > 0) return { live: false, num: days, label: days === 1 ? 'day' : 'days', extra: hours + 'h' };
-    var mins = Math.floor((diff % 3600000) / 60000);
-    return { live: false, num: hours, label: hours === 1 ? 'hour' : 'hours', extra: mins + 'm' };
+    var days = Math.ceil(diff / 86400000);
+    if (days > 0) return { live: false, num: days, label: days === 1 ? 'day to go' : 'days to go' };
+    var hours = Math.ceil(diff / 3600000);
+    return { live: false, num: hours, label: hours === 1 ? 'hour to go' : 'hours to go' };
   }
 
   function renderMatch(m) {
@@ -181,7 +177,7 @@
     row.className = 'countdown-row' + (cd.live ? ' live' : '');
     row.innerHTML = cd.live
       ? '<span class="countdown-num">Live</span><span class="countdown-label">match in progress</span>'
-      : '<span class="countdown-num">' + cd.num + '</span><span class="countdown-label">' + cd.label + ' (' + cd.extra + ') to go</span>';
+      : '<span class="countdown-num">' + cd.num + '</span><span class="countdown-label">' + cd.label + '</span>';
     el.appendChild(row);
 
     var teams = document.createElement('p');
@@ -231,7 +227,6 @@
     selected.forEach(function (m) { matchesEl.appendChild(renderMatch(m)); });
   }
 
-  // Everything upcoming that isn't already shown as a featured card.
   var selectedStarts = selected.map(function (m) { return m.start; });
   var rest = upcoming.filter(function (m) { return selectedStarts.indexOf(m.start) === -1; });
 
