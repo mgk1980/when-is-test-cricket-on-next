@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -62,16 +63,30 @@
   }
   .teams .vs { color: var(--cream-dim); font-style: italic; font-weight: 400; font-size: 0.75em; margin: 0 0.35em; }
   .countdown-row {
-    display: flex; align-items: baseline; gap: 0.6rem;
+    display: flex; flex-direction: column; align-items: flex-start; gap: 0.1rem;
     margin: 0 0 1.1rem; padding-bottom: 1.1rem; border-bottom: 1px solid var(--rule);
   }
-  .countdown-num { font-family: 'Fraunces', serif; font-size: 2.6rem; font-weight: 700; color: var(--gold); line-height: 1; }
-  .countdown-label { color: var(--cream-dim); font-size: 0.95rem; }
+  .countdown-num { font-family: 'Fraunces', serif; font-size: clamp(5rem, 20vw, 8rem); font-weight: 700; color: var(--gold); line-height: 1; }
+  .countdown-label { color: var(--cream-dim); font-size: 1.6rem; }
   .countdown-row.live .countdown-num { color: var(--ball); }
   dl.details { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 0.55rem 1rem; font-size: 0.92rem; }
   dl.details dt { color: var(--cream-dim); }
   dl.details dd { margin: 0; }
   footer { margin-top: 3rem; text-align: center; color: var(--cream-dim); font-size: 0.8rem; opacity: 0.75; }
+  .upcoming-wrap { margin-top: 2.5rem; }
+  .upcoming-heading {
+    font-family: 'Fraunces', serif; font-weight: 600; font-style: italic;
+    font-size: 1.1rem; color: var(--gold); margin: 0 0 0.9rem;
+  }
+  .upcoming-list { list-style: none; margin: 0; padding: 0; }
+  .upcoming-list li {
+    display: flex; justify-content: space-between; gap: 1rem;
+    padding: 0.7rem 0; border-bottom: 1px solid var(--rule);
+    font-size: 0.9rem;
+  }
+  .upcoming-list li:last-child { border-bottom: none; }
+  .upcoming-teams { font-weight: 500; }
+  .upcoming-date { color: var(--cream-dim); text-align: right; white-space: nowrap; }
   @media (prefers-reduced-motion: no-preference) {
     .match { animation: rise 0.5s ease-out both; }
     .match:nth-child(2) { animation-delay: 0.08s; }
@@ -90,6 +105,11 @@
     <div id="status" hidden>No Test match currently scheduled. Check back soon.</div>
     <div id="matches" class="matches"></div>
 
+    <div id="upcoming-wrap" class="upcoming-wrap" hidden>
+      <h2 class="upcoming-heading">Coming up after that</h2>
+      <ul id="upcoming-list" class="upcoming-list"></ul>
+    </div>
+
     <footer>Schedule updated by hand · times shown in your local timezone</footer>
   </div>
 
@@ -104,24 +124,24 @@
   const SCHEDULE = [
     {
       home: "South Africa", away: "Australia",
-      start: "2026-10-09T08:00:00Z",
+      start: "2026-10-09T07:30:00Z",
       venue: "Kingsmead, Durban",
       series: "Australia in South Africa Test Series (1st Test)",
-      broadcaster: "Check Sky Sports Cricket or TNT Sports listings"
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
     },
     {
       home: "South Africa", away: "Australia",
       start: "2026-10-18T08:00:00Z",
       venue: "St George's Park, Gqeberha",
       series: "Australia in South Africa Test Series (2nd Test)",
-      broadcaster: "Check Sky Sports Cricket or TNT Sports listings"
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
     },
     {
       home: "South Africa", away: "Australia",
       start: "2026-10-27T08:00:00Z",
       venue: "Newlands, Cape Town",
       series: "Australia in South Africa Test Series (3rd Test)",
-      broadcaster: "Check Sky Sports Cricket or TNT Sports listings"
+      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
     }
   ];
   // A Test match typically runs 5 days; treat it as "in progress" (not
@@ -157,17 +177,17 @@
     var el = document.createElement('article');
     el.className = 'match';
 
-    var teams = document.createElement('p');
-    teams.className = 'teams';
-    teams.innerHTML = escapeHtml(m.home) + '<span class="vs">v</span>' + escapeHtml(m.away);
-    el.appendChild(teams);
-
     var row = document.createElement('div');
     row.className = 'countdown-row' + (cd.live ? ' live' : '');
     row.innerHTML = cd.live
       ? '<span class="countdown-num">Live</span><span class="countdown-label">match in progress</span>'
       : '<span class="countdown-num">' + cd.num + '</span><span class="countdown-label">' + cd.label + ' (' + cd.extra + ') to go</span>';
     el.appendChild(row);
+
+    var teams = document.createElement('p');
+    teams.className = 'teams';
+    teams.innerHTML = escapeHtml(m.home) + '<span class="vs">v</span>' + escapeHtml(m.away);
+    el.appendChild(teams);
 
     var dl = document.createElement('dl');
     dl.className = 'details';
@@ -209,6 +229,28 @@
     statusEl.hidden = false;
   } else {
     selected.forEach(function (m) { matchesEl.appendChild(renderMatch(m)); });
+  }
+
+  // Everything upcoming that isn't already shown as a featured card.
+  var selectedStarts = selected.map(function (m) { return m.start; });
+  var rest = upcoming.filter(function (m) { return selectedStarts.indexOf(m.start) === -1; });
+
+  if (rest.length) {
+    var upcomingWrap = document.getElementById('upcoming-wrap');
+    var upcomingList = document.getElementById('upcoming-list');
+    rest.forEach(function (m) {
+      var li = document.createElement('li');
+      var teamsSpan = document.createElement('span');
+      teamsSpan.className = 'upcoming-teams';
+      teamsSpan.textContent = m.home + ' v ' + m.away;
+      var dateSpan = document.createElement('span');
+      dateSpan.className = 'upcoming-date';
+      dateSpan.textContent = new Date(m.start).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' });
+      li.appendChild(teamsSpan);
+      li.appendChild(dateSpan);
+      upcomingList.appendChild(li);
+    });
+    upcomingWrap.hidden = false;
   }
 </script>
 </body>
