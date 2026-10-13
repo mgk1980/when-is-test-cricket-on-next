@@ -129,21 +129,31 @@
   // Each entry is matched to a Test by home team, away team and start date
   // (within two days). Use the team names exactly as the site shows them,
   // with " (w)" for women's teams.
-  //   broadcasters: { sa, au, uk } — channel by country
-  //   broadcaster:  "..."           — a single line of text instead
+  //   watch: { home, away, uk } — channels in the home country, the away
+  //                                country and UK/Ireland (leave out any not known)
+  //   broadcaster:  "..."         — a single line of text instead
   //   start:        "...Z"          — corrects CricketData's start time (GMT)
   //   hide: true                    — removes a Test from the site
   const HAND_EDITS = [
     { home: "South Africa", away: "Australia", date: "2026-10-18",
-      broadcasters: { sa: "SuperSport", au: "Fox Cricket / Kayo Sports", uk: "Sky Sports" } },
+      watch: { home: "SuperSport", away: "Fox Cricket / Kayo Sports", uk: "Sky Sports" } },
     { home: "South Africa", away: "Australia", date: "2026-10-27",
-      broadcasters: { sa: "SuperSport", au: "Fox Cricket / Kayo Sports", uk: "Sky Sports" } },
+      watch: { home: "SuperSport", away: "Fox Cricket / Kayo Sports", uk: "Sky Sports" } },
     { home: "South Africa", away: "England", date: "2026-12-17", broadcaster: "Sky Sports Cricket" },
     { home: "South Africa", away: "England", date: "2026-12-26", broadcaster: "Sky Sports Cricket" },
     { home: "South Africa", away: "England", date: "2027-01-03", broadcaster: "Sky Sports Cricket" },
     // CricketData has the MCG Boxing Day Test at 11:30 GMT on 26 Dec; it starts 10:30 local, 23:30 GMT on 25 Dec.
     { home: "Australia", away: "New Zealand", date: "2026-12-26", start: "2026-12-25T23:30:00Z" }
   ];
+  const SHORT_NAMES = {
+    "Afghanistan": "AFG", "Australia": "AUS", "Bangladesh": "BAN", "England": "ENG",
+    "India": "IND", "Ireland": "IRE", "New Zealand": "NZ", "Pakistan": "PAK",
+    "South Africa": "SA", "Sri Lanka": "SL", "West Indies": "WI", "Zimbabwe": "ZIM"
+  };
+  function shortName(team) {
+    var plain = team.replace(/\s*\(w\)$/, '');
+    return SHORT_NAMES[plain] || plain;
+  }
   const DEFAULT_BROADCASTER = "UK/Ireland broadcaster not yet confirmed — check listings nearer the time";
 
   // Safety net if the hourly update ever stops: drop a Test this long after its start.
@@ -204,12 +214,12 @@
     addRow('Starts', fmtDate(m.start) + ', ' + fmtTime(m.start));
     if (m.venue) addRow('Venue', m.venue);
     if (m.series) addRow('Series', m.series);
-    if (m.broadcasters) {
-      var b = m.broadcasters;
+    if (m.watch) {
+      var w = m.watch;
       var parts = [];
-      if (b.sa) parts.push('SA: ' + b.sa);
-      if (b.au) parts.push('AUS: ' + b.au);
-      if (b.uk) parts.push('UK/Ire: ' + b.uk);
+      if (w.home) parts.push(shortName(m.home) + ': ' + w.home);
+      if (w.away) parts.push(shortName(m.away) + ': ' + w.away);
+      if (w.uk) parts.push('UK/Ire: ' + w.uk);
       addRow('Watch on', parts.join(' · '));
     } else {
       addRow('Watch on', m.broadcaster || DEFAULT_BROADCASTER);
@@ -226,7 +236,7 @@
       if (Math.abs(new Date(e.date + 'T12:00:00Z').getTime() - startMs) > 2 * DAY_MS) continue;
       if (e.hide) return null;
       if (e.start) m.start = e.start;
-      if (e.broadcasters) m.broadcasters = e.broadcasters;
+      if (e.watch) m.watch = e.watch;
       if (e.broadcaster) m.broadcaster = e.broadcaster;
     }
     if (/^TBC(,\s*TBC)?$/i.test(m.venue || '')) m.venue = 'TBC';
