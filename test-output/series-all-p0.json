@@ -1,0 +1,293 @@
+{
+  "apikey": "REDACTED",
+  "data": [
+    {
+      "id": "b484bdb4-19f1-4d1e-86f9-10cb404b3a90",
+      "name": "ICC Men's Cricket World Cup 2027",
+      "startDate": "2027-10-02",
+      "endDate": "Nov 21",
+      "odi": 57,
+      "t20": 0,
+      "test": 0,
+      "squads": 0,
+      "matches": 57
+    },
+    {
+      "id": "3d0cffd9-03e6-438b-9734-5e1fa55d07f8",
+      "name": "Bangladesh Women tour of England, 2027",
+      "startDate": "2027-09-08",
+      "endDate": "Sep 24",
+      "odi": 3,
+      "t20": 3,
+      "test": 0,
+      "squads": 0,
+      "matches": 6
+    },
+    {
+      "id": "1f4974d1-25f1-4656-a395-bbf496fe3654",
+      "name": "New Zealand tour of England 2027",
+      "startDate": "2027-09-07",
+      "endDate": "Sep 25",
+      "odi": 5,
+      "t20": 3,
+      "test": 0,
+      "squads": 0,
+      "matches": 8
+    },
+    {
+      "id": "7351297b-83c5-4548-bcb2-45138624e5a8",
+      "name": "Womens Ashes, 2027",
+      "startDate": "2027-06-24",
+      "endDate": "Jul 20",
+      "odi": 2,
+      "t20": 3,
+      "test": 1,
+      "squads": 0,
+      "matches": 7
+    },
+    {
+      "id": "41c8c253-7e87-4a63-b48c-a96381101c24",
+      "name": "ICC World Test Championship Final 2027",
+      "startDate": "2027-06-09",
+      "endDate": "Jun 13",
+      "odi": 0,
+      "t20": 0,
+      "test": 1,
+      "squads": 0,
+      "matches": 1
+    },
+    {
+      "id": "dd321613-5b40-4033-b33c-c4dee1656478",
+      "name": "The Ashes 2027",
+      "startDate": "2027-06-07",
+      "endDate": "Aug 02",
+      "odi": 0,
+      "t20": 0,
+      "test": 5,
+      "squads": 0,
+      "matches": 6
+    },
+    {
+      "id": "a4ba874b-a979-47ea-b6bb-3103d8585609",
+      "name": "Bangladesh tour of England 2027",
+      "startDate": "2027-05-28",
+      "endDate": "Jun 01",
+      "odi": 0,
+      "t20": 0,
+      "test": 1,
+      "squads": 0,
+      "matches": 1
+    },
+    {
+      "id": "f2ab1b03-3f92-42b1-b3b3-4046854cc69f",
+      "name": "Pakistan tour of England 2027",
+      "startDate": "2027-05-15",
+      "endDate": "May 26",
+      "odi": 5,
+      "t20": 0,
+      "test": 0,
+      "squads": 0,
+      "matches": 5
+    },
+    {
+      "id": "a98253a7-3e55-48ec-abe1-282ab1133a22",
+      "name": "Bangladesh tour of Nepal, 2027",
+      "startDate": "2027-03-26",
+      "endDate": "Mar 30",
+      "odi": 0,
+      "t20": 3,
+      "test": 0,
+      "squads": 0,
+      "matches": 3
+    },
+    {
+      "id": "c58c8862-0d1d-413a-88a5-bc84b11e3211",
+      "name": "Australia Women tour of South Africa, 2027",
+      "startDate": "2027-03-18",
+      "endDate": "Apr 11",
+      "odi": 3,
+      "t20": 3,
+      "test": 1,
+      "squads": 0,
+      "matches": 7
+    },
+    {
+      "id": "4a708cd9-0b6e-4315-94cc-c665beaa4acd",
+      "name": "Australia vs England, 150th Anniversary One-off Test Match, 2027",
+      "startDate": "2027-03-11",
+      "endDate": "Mar 15",
+      "odi": 0,
+      "t20": 0,
+      "test": 1,
+      "squads": 0,
+      "matches": 1
+    },
+    {
+      "id": "eb59e02f-5f61-40c9-9f88-5824445e62b5",
+      "name": "Australia vs England, 150th Anniversary One-off Test Match, 2027",
+      "startDate": "Mar 11",
+      "endDate": "Mar 15",
+      "odi": 0,
+      "t20": 0,
+      "test": 1,
+      "squads": 0,
+      "matches": 0
+    },
+    {
+      "id": "f3a3b820-9aa0-4816-857b-27470804d557",
+      "name": "New Zealand Women tour of Australia, 2027",
+      "startDate": "2027-03-06",
+      "endDate": "Mar 11",
+      "odi": 3,
+      "t20": 0,
+      "test": 0,
+      "squads": 0,
+      "matches": 3
+    },
+    {
+      "id": "4cbd529a-c99c-44ae-ad5c-0f893ffe9f7b",
+      "name": "CSA Provincial One-Day Challenge Division One 2027",
+      "startDate": "2027-02-27",
+      "endDate": "Mar 28",
+      "odi": 30,
+      "t20": 0,
+      "test": 0,
+      "squads": 0,
+      "matches": 30
+    },
+    {
+      "id": "6489ceaf-6b96-426f-8092-4d47d0b34d9b",
+      "name": "New Zealand Women tour of Australia, 2026",
+      "startDate": "Oct 18",
+      "endDate": "Oct 22",
+      "odi": 0,
+      "t20": 3,
+      "test": 0,
+      "squads": 0,
+      "matches": 0
+    },
+    {
+      "id": "58ba28ae-add6-44c4-b1d0-236dd9bbf35c",
+      "name": "Sri Lanka tour of New Zealand 2027",
+      "startDate": "2027-01-29",
+      "endDate": "Feb 16",
+      "odi": 3,
+      "t20": 3,
+      "test": 2,
+      "squads": 0,
+      "matches": 4
+    },
+    {
+      "id": "181dfb42-895f-4a4d-8907-94c125df9871",
+      "name": "Australia tour of India, 2027",
+      "startDate": "2027-01-21",
+      "endDate": "Mar 03",
+      "odi": 0,
+      "t20": 0,
+      "test": 5,
+      "squads": 0,
+      "matches": 5
+    },
+    {
+      "id": "945b11eb-ccb7-46af-b0bb-3dcda50330dd",
+      "name": "SA20, 2027",
+      "startDate": "2027-01-17",
+      "endDate": "Feb 21",
+      "odi": 0,
+      "t20": 34,
+      "test": 0,
+      "squads": 0,
+      "matches": 34
+    },
+    {
+      "id": "67e765d2-4c25-4959-a5f6-e5fb96f759a7",
+      "name": "Sri Lanka tour of New Zealand 2027",
+      "startDate": "2027-01-16",
+      "endDate": "Feb 16",
+      "odi": 3,
+      "t20": 3,
+      "test": 2,
+      "squads": 0,
+      "matches": 4
+    },
+    {
+      "id": "d8ce235b-bf83-423d-8ac3-764b94cb607c",
+      "name": "Sri Lanka tour of New Zealand 2027",
+      "startDate": "Jan 16",
+      "endDate": "Feb 16",
+      "odi": 3,
+      "t20": 3,
+      "test": 2,
+      "squads": 0,
+      "matches": 0
+    },
+    {
+      "id": "db2ae42c-2496-43c5-9af7-87010194c355",
+      "name": "Zimbabwe tour of India, 2027",
+      "startDate": "2027-01-03",
+      "endDate": "Jan 09",
+      "odi": 3,
+      "t20": 0,
+      "test": 0,
+      "squads": 0,
+      "matches": 3
+    },
+    {
+      "id": "f55cb152-7e06-4640-b4d6-abf7af1b7bba",
+      "name": "Super Smash 2026-27",
+      "startDate": "2026-12-27",
+      "endDate": "Jan 30",
+      "odi": 0,
+      "t20": 32,
+      "test": 0,
+      "squads": 0,
+      "matches": 32
+    },
+    {
+      "id": "93247670-a816-4dde-a282-be0e867e3d26",
+      "name": "England tour of South Africa, 2026-27",
+      "startDate": "2026-12-17",
+      "endDate": "Jan 15",
+      "odi": 3,
+      "t20": 0,
+      "test": 3,
+      "squads": 0,
+      "matches": 6
+    },
+    {
+      "id": "66b6a70a-a9a5-4c79-b98f-ffe3a2006613",
+      "name": "Vijay Hazare Trophy Plate 2026",
+      "startDate": "2026-12-14",
+      "endDate": "Dec 27",
+      "odi": 16,
+      "t20": 0,
+      "test": 0,
+      "squads": 0,
+      "matches": 16
+    },
+    {
+      "id": "b93ffb2e-968b-4940-bd81-969b2e650678",
+      "name": "Vijay Hazare Trophy Elite 2026-27",
+      "startDate": "2026-12-14",
+      "endDate": "Jan 08",
+      "odi": 119,
+      "t20": 0,
+      "test": 0,
+      "squads": 0,
+      "matches": 119
+    }
+  ],
+  "status": "success",
+  "info": {
+    "hitsToday": 7,
+    "hitsUsed": 1,
+    "hitsLimit": 100,
+    "credits": 0,
+    "server": 16,
+    "offsetRows": 0,
+    "totalRows": 1197,
+    "queryTime": 47.7226,
+    "s": 0,
+    "cache": 0
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "apikey": "REDACTED",
+  "data": [
+    {
+      "id": "31a62a32-3501-4a53-8a0b-d083a5135410",
+      "name": "Malaysia Women's T20I Tri-Series 2026",
+      "startDate": "2026-10-03",
+      "endDate": "Oct 10",
+      "odi": 0,
+      "t20": 1,
+      "test": 0,
+      "squads": 0,
+      "matches": 1
+    },
+    {
+      "id": "faaa67c9-efa1-4b0e-99a9-29f026580a7d",
+      "name": "South American Women's Championship T20I, 2026",
+      "startDate": "Sep 23",
+      "endDate": "Sep 27",
+      "odi": 0,
+      "t20": 3,
+      "test": 0,
+      "squads": 0,
+      "matches": 0
+    },
+    {
+      "id": "8bbcb5c9-75e7-4541-a116-bb3ce25cdf91",
+      "name": "Women's Premier League 2027",
+      "startDate": "Jan 14",
+      "endDate": "Feb 07",
+      "odi": 0,
+      "t20": 0,
+      "test": 0,
+      "squads": 0,
+      "matches": 0
+    },
+    {
+      "id": "a4a4caf4-d774-4827-993d-2d937535c93e",
+      "name": "West Indies Women tour of Zimbabwe, 2026",
+      "startDate": "2026-09-24",
+      "endDate": "Oct 07",
+      "odi": 3,
+      "t20": 3,
+      "test": 0,
+      "squads": 0,
+      "matches": 6
+    },
+    {
+      "id": "ebdcc9b9-1122-4e80-818a-7c91ec7eefde",
+      "name": "Chile Women and Costa Rica Women tour of Brazil, 2026",
+      "startDate": "2026-09-23",
+      "endDate": "Sep 24",
+      "odi": 0,
+      "t20": 2,
+      "test": 0,
+      "squads": 0,
+      "matches": 2
+    },
+    {
+      "id": "b4ddce53-0f97-4783-86b4-5bf78129e82a",
+      "name": "ICC Women’s Champions Trophy 2027",
+      "startDate": "Feb 13",
+      "endDate": "Feb 28",
+      "odi": 0,
+      "t20": 0,
+      "test": 0,
+      "squads": 0,
+      "matches": 0
+    },
+    {
+      "id": "cb03117c-b64c-4440-975d-d9c204350085",
+      "name": " Malaysia Women tour of Japan 2026",
+      "startDate": "2026-09-11",
+      "endDate": "Sep 13",
+      "odi": 0,
+      "t20": 3,
+      "test": 0,
+      "squads": 0,
+      "matches": 4
+    },
+    {
+      "id": "14a45e57-63bf-4ca1-841c-f240f85ad631",
+      "name": " Czech Republic Women's T20I Tri-Series 2026",
+      "startDate": "2026-09-04",
+      "endDate": "Sep 06",
+      "odi": 0,
+      "t20": 8,
+      "test": 0,
+      "squads": 0,
+      "matches": 8
+    },
+    {
+      "id": "e337c8e2-3d8d-4b92-9ad9-bf53bed345eb",
+      "name": "Serbia Women's T20I Tri-Series 2026",
+      "startDate": "2026-09-04",
+      "endDate": "Sep 06",
+      "odi": 0,
+      "t20": 6,
+      "test": 0,
+      "squads": 0,
+      "matches": 6
+    },
+    {
+      "id": "3d0cffd9-03e6-438b-9734-5e1fa55d07f8",
+      "name": "Bangladesh Women tour of England, 2027",
+      "startDate": "2027-09-08",
+      "endDate": "Sep 24",
+      "odi": 3,
+      "t20": 3,
+      "test": 0,
+      "squads": 0,
+      "matches": 6
+    },
+    {
+      "id": "7351297b-83c5-4548-bcb2-45138624e5a8",
+      "name": "Womens Ashes, 2027",
+      "startDate": "2027-06-24",
+      "endDate": "Jul 20",
+      "odi": 2,
+      "t20": 3,
+      "test": 1,
+      "squads": 0,
+      "matches": 7
+    },
+    {
+      "id": "be0eaf22-2d6d-4826-a358-09744f9fbed7",
+      "name": "Nordic Women's T20I Cup 2026",
+      "startDate": "2026-08-28",
+      "endDate": "Aug 30",
+      "odi": 0,
+      "t20": 6,
+      "test": 0,
+      "squads": 0,
+      "matches": 6
+    },
+    {
+      "id": "449fb48b-56ce-49db-9995-4b486d57c90c",
+      "name": "Netherlands Women tour of Scotland 2026",
+      "startDate": "2026-08-28",
+      "endDate": "Sep 01",
+      "odi": 3,
+      "t20": 0,
+      "test": 0,
+      "squads": 0,
+      "matches": 4
+    },
+    {
+      "id": "c8d183d0-d545-4781-9d73-0de43e044204",
+      "name": "Women's Asia Cup 2026",
+      "startDate": "2026-08-28",
+      "endDate": "Sep 13",
+      "odi": 0,
+      "t20": 15,
+      "test": 0,
+      "squads": 0,
+      "matches": 15
+    },
+    {
+      "id": "a0e475a9-cee5-4f77-8e6f-4c9f6c0a7471",
+      "name": "Women's Continental Cup 2026",
+      "startDate": "2026-08-26",
+      "endDate": "Aug 30",
+      "odi": 0,
+      "t20": 14,
+      "test": 0,
+      "squads": 0,
+      "matches": 14
+    },
+    {
+      "id": "2959c81f-9df4-41f8-b9d7-f316975d9677",
+      "name": "Belgium Women tour of Luxembourg, 2026",
+      "endDate": "Aug 23",
+      "odi": 0,
+      "t20": 4,
+      "test": 0,
+      "squads": 0,
+      "matches": 4
+    },
+    {
+      "id": "4df3a8b2-ea50-47df-8954-39b615b14e84",
+      "name": "China Women T20I Tri-Series, 2026",
+      "endDate": "Aug 24",
+      "odi": 0,
+      "t20": 7,
+      "test": 0,
+      "squads": 0,
+      "matches": 7
+    },
+    {
+      "id": "639d4a51-6405-402a-9281-17e7922e5a25",
+      "name": "Thailand Women tour of Papua New Guinea, 2026",
+      "endDate": "Aug 17",
+      "odi": 3,
+      "t20": 2,
+      "test": 0,
+      "squads": 0,
+      "matches": 5
+    },
+    {
+      "id": "67076271-fae2-49a3-892f-fb3135fcfe6f",
+      "name": "Women's T20I Quadrangular Series in Switzerland, 2026",
+      "startDate": "2026-07-29",
+      "endDate": "Jul 30",
+      "odi": 0,
+      "t20": 8,
+      "test": 0,
+      "squads": 0,
+      "matches": 8
+    },
+    {
+      "id": "15b456a1-c32b-4b10-aca8-ef5638d74685",
+      "name": "Jersey Women tour of Switzerland, 2026",
+      "startDate": "2026-07-29",
+      "endDate": "Jul 29",
+      "odi": 0,
+      "t20": 1,
+      "test": 0,
+      "squads": 0,
+      "matches": 1
+    },
+    {
+      "id": "3014a459-6e69-4f64-86eb-2f30a2cdbd0b",
+      "name": "Women's T20I Quadrangular Series in Namibia 2026",
+      "startDate": "2026-07-21",
+      "endDate": "Jul 30",
+      "odi": 0,
+      "t20": 14,
+      "test": 0,
+      "squads": 0,
+      "matches": 14
+    },
+    {
+      "id": "e3f55dba-c195-4c96-874e-a369d5924193",
+      "name": "Women's T20 Quadrangular Series in Namibia 2026",
+      "startDate": "Jul 21",
+      "endDate": "Jul 30",
+      "odi": 0,
+      "t20": 14,
+      "test": 0,
+      "squads": 0,
+      "matches": 0
+    },
+    {
+      "id": "f3a3b820-9aa0-4816-857b-27470804d557",
+      "name": "New Zealand Women tour of Australia, 2027",
+      "startDate": "2027-03-06",
+      "endDate": "Mar 11",
+      "odi": 3,
+      "t20": 0,
+      "test": 0,
+      "squads": 0,
+      "matches": 3
+    },
+    {
+      "id": "99c71a79-bc1f-4496-be02-f6b9a2be03ba",
+      "name": "Womens Big Bash League 2026",
+      "startDate": "2026-10-29",
+      "endDate": "Dec 05",
+      "odi": 0,
+      "t20": 38,
+      "test": 0,
+      "squads": 0,
+      "matches": 43
+    },
+    {
+      "id": "2e297a74-5081-4521-8333-e50f2006eddb",
+      "name": "New Zealand Women tour of Australia, 2026",
+      "startDate": "Oct 18",
+      "endDate": "Oct 22",
+      "odi": 0,
+      "t20": 3,
+      "test": 0,
+      "squads": 0,
+      "matches": 0
+    }
+  ],
+  "status": "success",
+  "info": {
+    "hitsToday": 11,
+    "hitsUsed": 1,
+    "hitsLimit": 100,
+    "credits": 0,
+    "server": 8,
+    "offsetRows": 0,
+    "totalRows": 358,
+    "queryTime": 55.0175,
+    "s": 0,
+    "cache": 0
+  }
+}

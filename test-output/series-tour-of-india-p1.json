@@ -1,0 +1,216 @@
+{
+  "apikey": "REDACTED",
+  "data": [
+    {
+      "id": "fd6438e1-616d-4014-86ce-a2e0f4ae5ec9",
+      "name": "South Africa Women tour of India, 2024",
+      "startDate": "2024-06-16",
+      "endDate": "Jul 09",
+      "odi": 3,
+      "t20": 3,
+      "test": 1,
+      "squads": 2,
+      "matches": 7
+    },
+    {
+      "id": "68a46159-d1b8-410c-a604-b62e0d44e43e",
+      "name": "England Lions tour of India, 2024",
+      "startDate": "2024-01-12",
+      "endDate": "Feb 04",
+      "odi": 0,
+      "t20": 0,
+      "test": 4,
+      "squads": 2,
+      "matches": 4
+    },
+    {
+      "id": "4fbc5813-8796-4952-a967-a5ade5333e40",
+      "name": "Australia Women tour of India, 2023-24",
+      "startDate": "2023-12-21",
+      "endDate": "Jan 09",
+      "odi": 3,
+      "t20": 3,
+      "test": 1,
+      "squads": 2,
+      "matches": 7
+    },
+    {
+      "id": "81a95caf-6f0b-4f79-a2ca-e1edb96bed70",
+      "name": "England Women tour of India, 2023",
+      "startDate": "2023-12-06",
+      "endDate": "Dec 17",
+      "odi": 0,
+      "t20": 3,
+      "test": 1,
+      "squads": 2,
+      "matches": 4
+    },
+    {
+      "id": "41ee3f4c-f9e2-4f97-a45f-fda6be281a64",
+      "name": "Australia tour of India, 2023",
+      "startDate": "2023-11-23",
+      "endDate": "Dec 03",
+      "odi": 0,
+      "t20": 5,
+      "test": 0,
+      "squads": 2,
+      "matches": 5
+    },
+    {
+      "id": "a5f5095a-72ed-455e-969f-30283ed18305",
+      "name": "England tour of India, 2024",
+      "startDate": "2024-01-25",
+      "endDate": "Mar 11",
+      "odi": 0,
+      "t20": 0,
+      "test": 5,
+      "squads": 2,
+      "matches": 5
+    },
+    {
+      "id": "0b9f3874-c50e-492e-899a-891ba323122f",
+      "name": "Afghanistan tour of India, 2024",
+      "startDate": "2024-01-11",
+      "endDate": "Jan 17",
+      "odi": 0,
+      "t20": 3,
+      "test": 0,
+      "squads": 2,
+      "matches": 3
+    },
+    {
+      "id": "8d55c6e3-7d56-4344-a96f-784e70a6fdce",
+      "name": "Australia tour of India, 2023",
+      "startDate": "2023-09-22",
+      "endDate": "Sep 27",
+      "odi": 3,
+      "t20": 0,
+      "test": 0,
+      "squads": 2,
+      "matches": 3
+    },
+    {
+      "id": "8087933a-cd0b-4adc-b7b9-a00c1dc75eb2",
+      "name": "Australia tour of India, 2023",
+      "startDate": "2023-02-09",
+      "endDate": "Mar 22",
+      "odi": 3,
+      "t20": 0,
+      "test": 4,
+      "squads": 4,
+      "matches": 7
+    },
+    {
+      "id": "9d9e4ce5-9683-4d01-9891-c0940557c405",
+      "name": "New Zealand tour of India, 2023",
+      "startDate": "2023-01-18",
+      "endDate": "Feb 01",
+      "odi": 3,
+      "t20": 3,
+      "test": 0,
+      "squads": 6,
+      "matches": 6
+    },
+    {
+      "id": "e8528bc5-309b-4640-bcbd-3cb31941ff98",
+      "name": "Sri Lanka tour of India, 2023",
+      "startDate": "2023-01-03",
+      "endDate": "Jan 15",
+      "odi": 3,
+      "t20": 3,
+      "test": 0,
+      "squads": 2,
+      "matches": 6
+    },
+    {
+      "id": "37455adf-e34d-4d39-aee7-526675824d7f",
+      "name": "Australia Women tour of India, 2022",
+      "startDate": "2022-12-09",
+      "endDate": "Dec 20",
+      "odi": 0,
+      "t20": 5,
+      "test": 0,
+      "squads": 2,
+      "matches": 5
+    },
+    {
+      "id": "9dce2d40-6d94-475b-911b-9f5ba2f07901",
+      "name": "New Zealand A tour of India, 2022",
+      "startDate": "2022-09-01",
+      "endDate": "Sep 27",
+      "odi": 3,
+      "t20": 0,
+      "test": 3,
+      "squads": 2,
+      "matches": 6
+    },
+    {
+      "id": "7c196849-1b14-40db-b6c7-13f60a6b7c40",
+      "name": "South Africa tour of India, 2022",
+      "startDate": "2022-09-28",
+      "endDate": "Oct 11",
+      "odi": 3,
+      "t20": 3,
+      "test": 0,
+      "squads": 2,
+      "matches": 6
+    },
+    {
+      "id": "d4712f5a-6360-4460-994a-f78c16340a13",
+      "name": "Australia tour of India, 2022",
+      "startDate": "2022-09-20",
+      "endDate": "Sep 25",
+      "odi": 0,
+      "t20": 3,
+      "test": 0,
+      "squads": 2,
+      "matches": 3
+    },
+    {
+      "id": "72b04949-3a5d-4e78-a4c3-c7bec8f9feed",
+      "name": "Sri Lanka tour of India, 2022",
+      "startDate": "2022-02-24",
+      "endDate": "Mar 16",
+      "odi": 0,
+      "t20": 3,
+      "test": 2,
+      "squads": 2,
+      "matches": 5
+    },
+    {
+      "id": "9c046ae5-d608-457a-a293-676bc2a9d456",
+      "name": "South Africa tour of India, 2022",
+      "startDate": "2022-06-09",
+      "endDate": "Jun 19",
+      "odi": 0,
+      "t20": 5,
+      "test": 0,
+      "squads": 2,
+      "matches": 5
+    },
+    {
+      "id": "e9788cf4-f231-442e-921d-98cd1469e2dd",
+      "name": "West Indies tour of India, 2022",
+      "startDate": "2022-02-06",
+      "endDate": "Feb 20",
+      "odi": 3,
+      "t20": 3,
+      "test": 0,
+      "squads": 6,
+      "matches": 6
+    }
+  ],
+  "status": "success",
+  "info": {
+    "hitsToday": 10,
+    "hitsUsed": 1,
+    "hitsLimit": 100,
+    "credits": 0,
+    "server": 18,
+    "offsetRows": 25,
+    "totalRows": 43,
+    "queryTime": 46.8161,
+    "s": 0,
+    "cache": 0
+  }
+}

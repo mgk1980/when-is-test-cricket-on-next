@@ -1,0 +1,293 @@
+{
+  "apikey": "REDACTED",
+  "data": [
+    {
+      "id": "f0606c40-1204-4b50-9f40-bad18975c8ba",
+      "name": "Sri Lanka tour of India, 2026",
+      "startDate": "2026-12-13",
+      "endDate": "Dec 27",
+      "odi": 3,
+      "t20": 3,
+      "test": 0,
+      "squads": 0,
+      "matches": 6
+    },
+    {
+      "id": "c6ae878d-fcb7-4342-a7d7-a65ee3fe3de2",
+      "name": "Big Bash League 2026-27",
+      "startDate": "2026-12-12",
+      "endDate": "Jan 26",
+      "odi": 0,
+      "t20": 44,
+      "test": 0,
+      "squads": 0,
+      "matches": 44
+    },
+    {
+      "id": "831d642d-5e56-4d7b-a209-2bd71664f077",
+      "name": "Bangladesh Women tour of New Zealand 2026",
+      "startDate": "2026-12-10",
+      "endDate": "Dec 23",
+      "odi": 3,
+      "t20": 3,
+      "test": 0,
+      "squads": 0,
+      "matches": 6
+    },
+    {
+      "id": "b9ea877f-0b3b-4b63-8585-6b0d39e87528",
+      "name": "India A tour of Nepal, 2026",
+      "startDate": "2026-12-09",
+      "endDate": "Dec 13",
+      "odi": 0,
+      "t20": 3,
+      "test": 0,
+      "squads": 0,
+      "matches": 3
+    },
+    {
+      "id": "6a3b3216-1fe2-4263-9345-5a25f2dde7fb",
+      "name": "India Women tour of South Africa, 2026",
+      "startDate": "2026-12-09",
+      "endDate": "Dec 30",
+      "odi": 3,
+      "t20": 3,
+      "test": 1,
+      "squads": 0,
+      "matches": 7
+    },
+    {
+      "id": "5bb37247-d995-429a-b269-3a5f8517c4f2",
+      "name": "New Zealand tour of Australia, 2026-27",
+      "startDate": "2026-12-09",
+      "endDate": "Jan 08",
+      "odi": 0,
+      "t20": 0,
+      "test": 4,
+      "squads": 0,
+      "matches": 4
+    },
+    {
+      "id": "3197381a-f366-4883-8df6-9a437085a7ab",
+      "name": "England A Women tour of India 2026",
+      "startDate": "2026-11-30",
+      "endDate": "Dec 22",
+      "odi": 3,
+      "t20": 3,
+      "test": 1,
+      "squads": 0,
+      "matches": 7
+    },
+    {
+      "id": "e52665ad-f801-47a8-85f7-b4fe9fdefdb5",
+      "name": "England Women U19 tour of India 2026",
+      "startDate": "2026-11-26",
+      "endDate": "Dec 06",
+      "odi": 0,
+      "t20": 5,
+      "test": 0,
+      "squads": 0,
+      "matches": 5
+    },
+    {
+      "id": "03ae5892-ea9f-4662-95f4-879d04dd2399",
+      "name": "International League T20 2026",
+      "startDate": "2026-11-21",
+      "endDate": "Dec 20",
+      "odi": 0,
+      "t20": 34,
+      "test": 0,
+      "squads": 0,
+      "matches": 34
+    },
+    {
+      "id": "ded5b9f9-9a41-44c9-a8ad-356df72cc432",
+      "name": "Plunket Shield 2026-27",
+      "startDate": "2026-11-18",
+      "endDate": "Mar 29",
+      "odi": 0,
+      "t20": 0,
+      "test": 24,
+      "squads": 0,
+      "matches": 24
+    },
+    {
+      "id": "7acadb0c-bc4e-4c91-8c47-7bbe53f2227b",
+      "name": "Bangladesh tour of South Africa, 2026",
+      "startDate": "2026-11-15",
+      "endDate": "Dec 13",
+      "odi": 3,
+      "t20": 3,
+      "test": 2,
+      "squads": 0,
+      "matches": 8
+    },
+    {
+      "id": "d7c7977a-0a0a-41d2-9e2b-6481943eee7c",
+      "name": "Syed Mushtaq Ali Trophy Elite 2026",
+      "startDate": "2026-11-14",
+      "endDate": "Dec 06",
+      "odi": 0,
+      "t20": 124,
+      "test": 0,
+      "squads": 0,
+      "matches": 125
+    },
+    {
+      "id": "c4807728-f69b-4067-813a-18c656328b2a",
+      "name": "Syed Mushtaq Ali Trophy Plate 2026",
+      "startDate": "2026-11-14",
+      "endDate": "Nov 24",
+      "odi": 0,
+      "t20": 16,
+      "test": 0,
+      "squads": 0,
+      "matches": 16
+    },
+    {
+      "id": "9c385594-20fe-4d3d-b2bb-df4de8e043bc",
+      "name": "England tour of Australia, 2026",
+      "startDate": "2026-11-12",
+      "endDate": "Dec 02",
+      "odi": 3,
+      "t20": 5,
+      "test": 0,
+      "squads": 0,
+      "matches": 8
+    },
+    {
+      "id": "55616b78-3f8c-429a-b9c2-cf73c72d4cd4",
+      "name": "Ireland A tour of Zimbabwe, 2026",
+      "startDate": "2026-11-06",
+      "endDate": "Nov 28",
+      "odi": 5,
+      "t20": 0,
+      "test": 2,
+      "squads": 0,
+      "matches": 7
+    },
+    {
+      "id": "d1cd3983-e0d2-4abd-87dc-4b122cc48481",
+      "name": "ACC Men's U19 Asia Cup 2026",
+      "startDate": "2026-11-05",
+      "endDate": "Nov 14",
+      "odi": 15,
+      "t20": 0,
+      "test": 0,
+      "squads": 0,
+      "matches": 15
+    },
+    {
+      "id": "f203fb5c-8911-43bd-ba8f-6a84bd34903e",
+      "name": "Hong Kong Sixes 2026",
+      "startDate": "2026-10-30",
+      "endDate": "Nov 01",
+      "odi": 0,
+      "t20": 24,
+      "test": 0,
+      "squads": 0,
+      "matches": 24
+    },
+    {
+      "id": "99c71a79-bc1f-4496-be02-f6b9a2be03ba",
+      "name": "Womens Big Bash League 2026",
+      "startDate": "2026-10-29",
+      "endDate": "Dec 05",
+      "odi": 0,
+      "t20": 38,
+      "test": 0,
+      "squads": 0,
+      "matches": 43
+    },
+    {
+      "id": "127a3118-68a6-4f22-8375-1e2a9a8da0b3",
+      "name": "The Ford Trophy 2026-27",
+      "startDate": "2026-10-28",
+      "endDate": "Feb 21",
+      "odi": 32,
+      "t20": 0,
+      "test": 0,
+      "squads": 0,
+      "matches": 32
+    },
+    {
+      "id": "7d61737b-c4d8-4f44-b8cb-309ce4d9c57a",
+      "name": "Afghanistan vs Zimbabwe in UAE, 2026",
+      "startDate": "2026-10-27",
+      "endDate": "Nov 17",
+      "odi": 0,
+      "t20": 3,
+      "test": 2,
+      "squads": 0,
+      "matches": 5
+    },
+    {
+      "id": "b1b67dd4-aeba-4f70-9a23-257a6da73d88",
+      "name": "India A tour of New Zealand, 2026",
+      "startDate": "2026-10-24",
+      "endDate": "Nov 10",
+      "odi": 0,
+      "t20": 0,
+      "test": 3,
+      "squads": 0,
+      "matches": 3
+    },
+    {
+      "id": "afc051fd-79b4-4635-8f3a-7cda1dd50f02",
+      "name": "West Indies tour of Bangladesh, 2026",
+      "startDate": "2026-10-22",
+      "endDate": "Nov 01",
+      "odi": 0,
+      "t20": 0,
+      "test": 2,
+      "squads": 0,
+      "matches": 3
+    },
+    {
+      "id": "ac09b782-bac3-4861-971a-5559a4703507",
+      "name": "Ireland tour of Namibia, 2026",
+      "startDate": "2026-10-22",
+      "endDate": "Nov 01",
+      "odi": 5,
+      "t20": 0,
+      "test": 0,
+      "squads": 0,
+      "matches": 5
+    },
+    {
+      "id": "9f0a2527-1508-42b3-9945-4ade13fd4b5a",
+      "name": "India tour of New Zealand 2026",
+      "startDate": "2026-10-22",
+      "endDate": "Dec 01",
+      "odi": 5,
+      "t20": 5,
+      "test": 2,
+      "squads": 0,
+      "matches": 12
+    },
+    {
+      "id": "73da12b0-33ea-455a-a891-ca61733e741d",
+      "name": "ICC Men's T20 World Cup Africa Sub Regional Qualifier C 2026",
+      "startDate": "2026-10-20",
+      "endDate": "Oct 25",
+      "odi": 0,
+      "t20": 15,
+      "test": 0,
+      "squads": 0,
+      "matches": 15
+    }
+  ],
+  "status": "success",
+  "info": {
+    "hitsToday": 8,
+    "hitsUsed": 1,
+    "hitsLimit": 100,
+    "credits": 0,
+    "server": 21,
+    "offsetRows": 25,
+    "totalRows": 1197,
+    "queryTime": 42.9781,
+    "s": 0,
+    "cache": 0
+  }
+}

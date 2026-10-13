@@ -1,0 +1,293 @@
+{
+  "apikey": "REDACTED",
+  "data": [
+    {
+      "id": "e52665ad-f801-47a8-85f7-b4fe9fdefdb5",
+      "name": "England Women U19 tour of India 2026",
+      "startDate": "2026-11-26",
+      "endDate": "Dec 06",
+      "odi": 0,
+      "t20": 5,
+      "test": 0,
+      "squads": 0,
+      "matches": 5
+    },
+    {
+      "id": "3197381a-f366-4883-8df6-9a437085a7ab",
+      "name": "England A Women tour of India 2026",
+      "startDate": "2026-11-30",
+      "endDate": "Dec 22",
+      "odi": 3,
+      "t20": 3,
+      "test": 1,
+      "squads": 0,
+      "matches": 7
+    },
+    {
+      "id": "cb552713-036d-4d90-93c1-d4aef3ab3829",
+      "name": "Sri Lanka Women U19 tour of India 2026",
+      "startDate": "2026-06-22",
+      "endDate": "Jul 06",
+      "odi": 3,
+      "t20": 3,
+      "test": 0,
+      "squads": 0,
+      "matches": 6
+    },
+    {
+      "id": "88529516-4e91-432b-b99b-1fdb57ffa1b7",
+      "name": "Zimbabwe Women tour of India, 2026",
+      "startDate": "2026-10-16",
+      "endDate": "Oct 28",
+      "odi": 3,
+      "t20": 3,
+      "test": 0,
+      "squads": 0,
+      "matches": 6
+    },
+    {
+      "id": "2c08c573-88b9-4c19-bf2d-45efabdaec56",
+      "name": "Australia U19 tour of India 2026",
+      "startDate": "2026-09-18",
+      "endDate": "Oct 08",
+      "odi": 3,
+      "t20": 0,
+      "test": 2,
+      "squads": 0,
+      "matches": 5
+    },
+    {
+      "id": "70e7ac37-33e6-4468-9181-74d8b6bb969e",
+      "name": "Australia A Women tour of India 2026",
+      "startDate": "2026-09-12",
+      "endDate": "Oct 02",
+      "odi": 3,
+      "t20": 3,
+      "test": 1,
+      "squads": 0,
+      "matches": 7
+    },
+    {
+      "id": "1db21cd4-5fe2-4a93-a67f-d6d4e65b2ca3",
+      "name": "Australia A tour of India 2026",
+      "startDate": "2026-09-22",
+      "endDate": "Oct 11",
+      "odi": 3,
+      "t20": 0,
+      "test": 2,
+      "squads": 0,
+      "matches": 5
+    },
+    {
+      "id": "181dfb42-895f-4a4d-8907-94c125df9871",
+      "name": "Australia tour of India, 2027",
+      "startDate": "2027-01-21",
+      "endDate": "Mar 03",
+      "odi": 0,
+      "t20": 0,
+      "test": 5,
+      "squads": 0,
+      "matches": 5
+    },
+    {
+      "id": "db2ae42c-2496-43c5-9af7-87010194c355",
+      "name": "Zimbabwe tour of India, 2027",
+      "startDate": "2027-01-03",
+      "endDate": "Jan 09",
+      "odi": 3,
+      "t20": 0,
+      "test": 0,
+      "squads": 0,
+      "matches": 3
+    },
+    {
+      "id": "f0606c40-1204-4b50-9f40-bad18975c8ba",
+      "name": "Sri Lanka tour of India, 2026",
+      "startDate": "2026-12-13",
+      "endDate": "Dec 27",
+      "odi": 3,
+      "t20": 3,
+      "test": 0,
+      "squads": 0,
+      "matches": 6
+    },
+    {
+      "id": "702ce6cb-a551-4aab-961e-0ed1548a3c74",
+      "name": "West Indies tour of India, 2026",
+      "startDate": "2026-09-27",
+      "endDate": "Oct 17",
+      "odi": 3,
+      "t20": 5,
+      "test": 0,
+      "squads": 3,
+      "matches": 8
+    },
+    {
+      "id": "3eb31b49-de81-4168-8a54-4d9b166c814a",
+      "name": "Afghanistan tour of India 2026",
+      "startDate": "2026-06-06",
+      "endDate": "Jun 20",
+      "odi": 3,
+      "t20": 0,
+      "test": 1,
+      "squads": 0,
+      "matches": 4
+    },
+    {
+      "id": "b31173af-1e08-4359-8a7e-1521b9847e54",
+      "name": "New Zealand tour of India, 2026",
+      "startDate": "2026-01-11",
+      "endDate": "Jan 31",
+      "odi": 3,
+      "t20": 5,
+      "test": 0,
+      "squads": 2,
+      "matches": 8
+    },
+    {
+      "id": "4a231d95-58f8-4c1e-bdd0-45b7e4cd8f64",
+      "name": "South Africa tour of India, 2025",
+      "startDate": "2025-11-14",
+      "endDate": "Dec 19",
+      "odi": 3,
+      "t20": 5,
+      "test": 2,
+      "squads": 5,
+      "matches": 10
+    },
+    {
+      "id": "b7b6954c-ad3d-428c-8eb2-f0a44fb43291",
+      "name": "South Africa A tour of India, 2025",
+      "startDate": "2025-10-30",
+      "endDate": "Nov 19",
+      "odi": 3,
+      "t20": 0,
+      "test": 2,
+      "squads": 5,
+      "matches": 5
+    },
+    {
+      "id": "527cba80-4d6e-4545-b05e-d0b76f7f3e37",
+      "name": "West Indies tour of India, 2025",
+      "startDate": "2025-10-02",
+      "endDate": "Oct 14",
+      "odi": 0,
+      "t20": 0,
+      "test": 2,
+      "squads": 2,
+      "matches": 2
+    },
+    {
+      "id": "37852114-cc5d-4db2-86cc-2e8552022ee4",
+      "name": "Australia A tour of India, 2025",
+      "startDate": "2025-09-16",
+      "endDate": "Oct 05",
+      "odi": 3,
+      "t20": 0,
+      "test": 2,
+      "squads": 2,
+      "matches": 6
+    },
+    {
+      "id": "2b862ffb-b56a-4275-8224-10df1101d6cc",
+      "name": "Australia Women tour of India, 2025",
+      "startDate": "2025-09-14",
+      "endDate": "Sep 20",
+      "odi": 0,
+      "t20": 0,
+      "test": 0,
+      "squads": 2,
+      "matches": 3
+    },
+    {
+      "id": "0c3fce23-c4e5-4054-afa1-d61a46af1006",
+      "name": "Ireland Womens tour of India, 2025",
+      "startDate": "2025-01-10",
+      "endDate": "Jan 15",
+      "odi": 3,
+      "t20": 0,
+      "test": 0,
+      "squads": 2,
+      "matches": 3
+    },
+    {
+      "id": "517a2059-8968-47a1-bf57-8d554ac6dca6",
+      "name": "West Indies Women tour of India, 2024",
+      "startDate": "2024-12-15",
+      "endDate": "Dec 27",
+      "odi": 3,
+      "t20": 3,
+      "test": 0,
+      "squads": 2,
+      "matches": 6
+    },
+    {
+      "id": "0dc67079-76d0-4c79-835a-8e049bb5808b",
+      "name": "New Zealand Women tour of India 2024",
+      "startDate": "2024-10-24",
+      "endDate": "Oct 29",
+      "odi": 3,
+      "t20": 0,
+      "test": 0,
+      "squads": 2,
+      "matches": 3
+    },
+    {
+      "id": "883e05a7-c8d5-47e1-b21f-b5873431458d",
+      "name": "Australia Under 19 tour of India, 2024",
+      "startDate": "2024-09-21",
+      "endDate": "Oct 10",
+      "odi": 3,
+      "t20": 0,
+      "test": 2,
+      "squads": 2,
+      "matches": 5
+    },
+    {
+      "id": "bf12ec10-a6e7-43b1-8cf6-6e2fcb4321f9",
+      "name": "England tour of India, 2025",
+      "startDate": "2025-01-22",
+      "endDate": "Feb 12",
+      "odi": 3,
+      "t20": 5,
+      "test": 0,
+      "squads": 2,
+      "matches": 8
+    },
+    {
+      "id": "403410bb-b597-4da4-9fb4-fdab6b473813",
+      "name": "New Zealand tour of India, 2024",
+      "startDate": "2024-10-16",
+      "endDate": "Nov 05",
+      "odi": 0,
+      "t20": 0,
+      "test": 3,
+      "squads": 2,
+      "matches": 3
+    },
+    {
+      "id": "f42f527a-6562-44b1-bb46-2fb2f505bf63",
+      "name": "Bangladesh tour of India, 2024",
+      "startDate": "2024-09-19",
+      "endDate": "Oct 12",
+      "odi": 0,
+      "t20": 3,
+      "test": 2,
+      "squads": 2,
+      "matches": 5
+    }
+  ],
+  "status": "success",
+  "info": {
+    "hitsToday": 9,
+    "hitsUsed": 1,
+    "hitsLimit": 100,
+    "credits": 0,
+    "server": 16,
+    "offsetRows": 0,
+    "totalRows": 43,
+    "queryTime": 69.1768,
+    "s": 0,
+    "cache": 0
+  }
+}
