@@ -1,0 +1,231 @@
+{
+  "apikey": "REDACTED",
+  "data": {
+    "info": {
+      "id": "0c2de514-946a-4b55-a6e3-4d1d6e892459",
+      "name": "Australia tour of South Africa, 2026",
+      "startdate": "2026-09-24",
+      "enddate": "Oct 31",
+      "odi": 3,
+      "t20": 0,
+      "test": 3,
+      "squads": 0,
+      "matches": 7
+    },
+    "matchList": [
+      {
+        "id": "e50a9d29-3043-47ef-b9ed-034f79cc6b0b",
+        "name": "South Africa vs Australia, 3rd Test, Australia tour of South Africa, 2026",
+        "status": "Match starts at Oct 27, 08:30 GMT",
+        "venue": "Newlands, Cape Town",
+        "date": "2026-10-27",
+        "dateTimeGMT": "2026-10-27T08:30:00",
+        "teams": [
+          "South Africa",
+          "Australia"
+        ],
+        "teamInfo": [
+          {
+            "name": "Australia",
+            "shortname": "AUS",
+            "img": "https://g.cricapi.com/iapi/6-637877070670541994.webp?w=48"
+          },
+          {
+            "name": "South Africa",
+            "shortname": "RSA",
+            "img": "https://g.cricapi.com/iapi/82-637877071839088912.webp?w=48"
+          }
+        ],
+        "fantasyEnabled": false,
+        "bbbEnabled": false,
+        "hasSquad": false,
+        "matchStarted": false,
+        "matchEnded": false
+      },
+      {
+        "id": "580c9421-fc69-4e36-89c3-34395ecb6e70",
+        "name": "South Africa vs Australia, 2nd ODI, Australia tour of South Africa, 2026",
+        "status": "South Africa won by 32 runs",
+        "venue": "The Wanderers Stadium, Johannesburg",
+        "date": "2026-09-27",
+        "dateTimeGMT": "2026-09-27T00:00:00",
+        "teams": [
+          "South Africa",
+          "Australia"
+        ],
+        "teamInfo": [
+          {
+            "name": "Australia",
+            "shortname": "AUS",
+            "img": "https://g.cricapi.com/iapi/6-637877070670541994.webp?w=48"
+          },
+          {
+            "name": "South Africa",
+            "shortname": "RSA",
+            "img": "https://g.cricapi.com/iapi/82-637877071839088912.webp?w=48"
+          }
+        ],
+        "fantasyEnabled": true,
+        "bbbEnabled": false,
+        "hasSquad": false,
+        "matchStarted": true,
+        "matchEnded": true
+      },
+      {
+        "id": "51482a19-a41a-494e-82a0-3714b5a77360",
+        "name": "South Africa vs Australia, 1st Test, Australia tour of South Africa, 2026",
+        "status": "Australia won by 214 runs",
+        "venue": "Kingsmead, Durban",
+        "date": "2026-10-09",
+        "dateTimeGMT": "2026-10-09T07:30:00",
+        "teams": [
+          "South Africa",
+          "Australia"
+        ],
+        "teamInfo": [
+          {
+            "name": "Australia",
+            "shortname": "AUS",
+            "img": "https://g.cricapi.com/iapi/6-637877070670541994.webp?w=48"
+          },
+          {
+            "name": "South Africa",
+            "shortname": "RSA",
+            "img": "https://g.cricapi.com/iapi/82-637877071839088912.webp?w=48"
+          }
+        ],
+        "fantasyEnabled": true,
+        "bbbEnabled": false,
+        "hasSquad": false,
+        "matchStarted": true,
+        "matchEnded": true
+      },
+      {
+        "id": "f3451545-863c-4330-8901-556df932122a",
+        "name": "South Africa vs Australia, 1st ODI, Australia tour of South Africa, 2026",
+        "status": "South Africa won by 67 runs",
+        "venue": "Kingsmead, Durban",
+        "date": "2026-09-24",
+        "dateTimeGMT": "2026-09-24T00:00:00",
+        "teams": [
+          "South Africa",
+          "Australia"
+        ],
+        "teamInfo": [
+          {
+            "name": "Australia",
+            "shortname": "AUS",
+            "img": "https://g.cricapi.com/iapi/6-637877070670541994.webp?w=48"
+          },
+          {
+            "name": "South Africa",
+            "shortname": "RSA",
+            "img": "https://g.cricapi.com/iapi/82-637877071839088912.webp?w=48"
+          }
+        ],
+        "fantasyEnabled": true,
+        "bbbEnabled": false,
+        "hasSquad": false,
+        "matchStarted": true,
+        "matchEnded": true
+      },
+      {
+        "id": "81705c0b-e7e8-412b-a2bc-97c5b8fc93c3",
+        "name": "South Africa vs Australia, 3rd ODI, Australia tour of South Africa, 2026",
+        "status": "Australia won by 45 runs (DLS Method due to rain)",
+        "venue": "Senwes Park, Potchefstroom",
+        "date": "2026-09-30",
+        "dateTimeGMT": "2026-09-30T00:00:00",
+        "teams": [
+          "South Africa",
+          "Australia"
+        ],
+        "teamInfo": [
+          {
+            "name": "Australia",
+            "shortname": "AUS",
+            "img": "https://g.cricapi.com/iapi/6-637877070670541994.webp?w=48"
+          },
+          {
+            "name": "South Africa",
+            "shortname": "RSA",
+            "img": "https://g.cricapi.com/iapi/82-637877071839088912.webp?w=48"
+          }
+        ],
+        "fantasyEnabled": true,
+        "bbbEnabled": false,
+        "hasSquad": false,
+        "matchStarted": true,
+        "matchEnded": true
+      },
+      {
+        "id": "87c745f1-00b1-4eae-a083-d67fffd80388",
+        "name": "South Africa vs Australia, 2nd Test, Australia tour of South Africa, 2026",
+        "status": "Match starts at Oct 18, 07:30 GMT",
+        "venue": "St George's Park, Gqeberha",
+        "date": "2026-10-18",
+        "dateTimeGMT": "2026-10-18T07:30:00",
+        "teams": [
+          "South Africa",
+          "Australia"
+        ],
+        "teamInfo": [
+          {
+            "name": "Australia",
+            "shortname": "AUS",
+            "img": "https://g.cricapi.com/iapi/6-637877070670541994.webp?w=48"
+          },
+          {
+            "name": "South Africa",
+            "shortname": "RSA",
+            "img": "https://g.cricapi.com/iapi/82-637877071839088912.webp?w=48"
+          }
+        ],
+        "fantasyEnabled": false,
+        "bbbEnabled": false,
+        "hasSquad": false,
+        "matchStarted": false,
+        "matchEnded": false
+      },
+      {
+        "id": "8c243510-2e8b-4577-be4e-ec2485e94d1b",
+        "name": "Cricket South Africa Invitation XI vs Australia, 2 Days Warm-Up Match, Australia tour of South Africa, 2026",
+        "status": "Match drawn",
+        "venue": "Senwes Park, Potchefstroom",
+        "date": "2026-10-03",
+        "dateTimeGMT": "2026-10-03T00:00:00",
+        "teams": [
+          "Cricket South Africa Invitation XI",
+          "Australia"
+        ],
+        "teamInfo": [
+          {
+            "name": "Australia",
+            "shortname": "AUS",
+            "img": "https://g.cricapi.com/iapi/6-637877070670541994.webp?w=48"
+          },
+          {
+            "name": "Cricket South Africa Invitation XI",
+            "img": "https://h.cricapi.com/img/icon512.png"
+          }
+        ],
+        "fantasyEnabled": true,
+        "bbbEnabled": false,
+        "hasSquad": false,
+        "matchStarted": true,
+        "matchEnded": true
+      }
+    ]
+  },
+  "status": "success",
+  "info": {
+    "hitsToday": 5,
+    "hitsUsed": 1,
+    "hitsLimit": 100,
+    "credits": 0,
+    "server": 9,
+    "queryTime": 15.9636,
+    "s": 0,
+    "cache": 0
+  }
+}

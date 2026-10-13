@@ -1,0 +1,73 @@
+{
+  "apikey": "REDACTED",
+  "data": {
+    "id": "51482a19-a41a-494e-82a0-3714b5a77360",
+    "name": "South Africa vs Australia, 1st Test, Australia tour of South Africa, 2026",
+    "status": "Australia won by 214 runs",
+    "venue": "Kingsmead, Durban",
+    "date": "2026-10-09",
+    "dateTimeGMT": "2026-10-09T07:30:00",
+    "teams": [
+      "South Africa",
+      "Australia"
+    ],
+    "teamInfo": [
+      {
+        "name": "Australia",
+        "shortname": "AUS",
+        "img": "https://g.cricapi.com/iapi/6-637877070670541994.webp?w=48"
+      },
+      {
+        "name": "South Africa",
+        "shortname": "RSA",
+        "img": "https://g.cricapi.com/iapi/82-637877071839088912.webp?w=48"
+      }
+    ],
+    "score": [
+      {
+        "r": 390,
+        "w": 10,
+        "o": 137.2,
+        "inning": "australia Inning 1"
+      },
+      {
+        "r": 284,
+        "w": 10,
+        "o": 78,
+        "inning": "South Africa,Australia Inning 1"
+      },
+      {
+        "r": 314,
+        "w": 6,
+        "o": 58,
+        "inning": "australia Inning 2"
+      },
+      {
+        "r": 206,
+        "w": 10,
+        "o": 86.5,
+        "inning": "South Africa,Australia Inning 2"
+      }
+    ],
+    "tossWinner": "australia",
+    "tossChoice": "bat",
+    "matchWinner": "Australia",
+    "series_id": "0c2de514-946a-4b55-a6e3-4d1d6e892459",
+    "fantasyEnabled": true,
+    "bbbEnabled": false,
+    "hasSquad": false,
+    "matchStarted": true,
+    "matchEnded": true
+  },
+  "status": "success",
+  "info": {
+    "hitsToday": 6,
+    "hitsUsed": 1,
+    "hitsLimit": 100,
+    "credits": 0,
+    "server": 15,
+    "queryTime": 15.7274,
+    "s": 0,
+    "cache": 0
+  }
+}
