@@ -118,183 +118,38 @@
       <ul id="upcoming-list" class="upcoming-list"></ul>
     </div>
 
-    <footer>Schedule updated by hand · times shown in your local timezone</footer>
+    <footer>Schedule updates automatically · times shown in your local timezone</footer>
   </div>
 
 <script>
-  const SCHEDULE = [
-    // --- Australia in South Africa, Oct 2026 ---
-    {
-      home: "South Africa", away: "Australia",
-      start: "2026-10-09T07:30:00Z",
-      venue: "Kingsmead, Durban",
-      series: "Australia in South Africa (1st Test)",
-      broadcasters: { sa: "SuperSport", au: "Fox Cricket / Kayo Sports", uk: "Sky Sports" }
-    },
-    {
-      home: "South Africa", away: "Australia",
-      start: "2026-10-18T08:00:00Z",
-      venue: "St George's Park, Gqeberha",
-      series: "Australia in South Africa (2nd Test)",
-      broadcasters: { sa: "SuperSport", au: "Fox Cricket / Kayo Sports", uk: "Sky Sports" }
-    },
-    {
-      home: "South Africa", away: "Australia",
-      start: "2026-10-27T08:00:00Z",
-      venue: "Newlands, Cape Town",
-      series: "Australia in South Africa (3rd Test)",
-      broadcasters: { sa: "SuperSport", au: "Fox Cricket / Kayo Sports", uk: "Sky Sports" }
-    },
-    // --- West Indies in Bangladesh, Oct-Nov 2026 ---
-    {
-      home: "Bangladesh", away: "West Indies",
-      start: "2026-10-28T04:00:00Z",
-      venue: "Shere Bangla National Stadium, Mirpur",
-      series: "West Indies in Bangladesh (1st Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
-    },
-    {
-      home: "Bangladesh", away: "West Indies",
-      start: "2026-11-05T04:00:00Z",
-      venue: "Sylhet International Cricket Stadium",
-      series: "West Indies in Bangladesh (2nd Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
-    },
-    // --- Sri Lanka in Pakistan, Nov 2026 ---
-    {
-      home: "Pakistan", away: "Sri Lanka",
-      start: "2026-11-09T05:00:00Z",
-      venue: "Rawalpindi Cricket Stadium",
-      series: "Sri Lanka in Pakistan (1st Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
-    },
-    {
-      home: "Pakistan", away: "Sri Lanka",
-      start: "2026-11-17T05:00:00Z",
-      venue: "Gaddafi Stadium, Lahore",
-      series: "Sri Lanka in Pakistan (2nd Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
-    },
-    // --- Bangladesh in South Africa, Nov 2026 ---
-    {
-      home: "South Africa", away: "Bangladesh",
-      start: "2026-11-15T08:00:00Z",
-      venue: "DP World Wanderers Stadium, Johannesburg",
-      series: "Bangladesh in South Africa (1st Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
-    },
-    {
-      home: "South Africa", away: "Bangladesh",
-      start: "2026-11-23T08:00:00Z",
-      venue: "SuperSport Park, Centurion",
-      series: "Bangladesh in South Africa (2nd Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
-    },
-    // --- India in New Zealand, Nov-Dec 2026 ---
-    {
-      home: "New Zealand", away: "India",
-      start: "2026-11-18T22:00:00Z",
-      venue: "Basin Reserve, Wellington",
-      series: "India in New Zealand (1st Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
-    },
-    {
-      home: "New Zealand", away: "India",
-      start: "2026-11-26T22:00:00Z",
-      venue: "Hagley Oval, Christchurch",
-      series: "India in New Zealand (2nd Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
-    },
-    // --- New Zealand in Australia, Trans-Tasman Trophy, Dec 2026-Jan 2027 ---
-    {
-      home: "Australia", away: "New Zealand",
-      start: "2026-12-09T02:20:00Z",
-      venue: "Perth Stadium",
-      series: "New Zealand in Australia, Trans-Tasman Trophy (1st Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
-    },
-    {
-      home: "Australia", away: "New Zealand",
-      start: "2026-12-17T00:30:00Z",
-      venue: "Adelaide Oval",
-      series: "New Zealand in Australia, Trans-Tasman Trophy (2nd Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
-    },
-    {
-      home: "Australia", away: "New Zealand",
-      start: "2026-12-25T23:30:00Z",
-      venue: "MCG, Melbourne",
-      series: "New Zealand in Australia, Trans-Tasman Trophy (3rd Test, Boxing Day)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
-    },
-    {
-      home: "Australia", away: "New Zealand",
-      start: "2027-01-03T23:30:00Z",
-      venue: "SCG, Sydney",
-      series: "New Zealand in Australia, Trans-Tasman Trophy (4th Test, New Year Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
-    },
-    // --- England in South Africa, Basil D'Oliveira Trophy, Dec 2026-Jan 2027 ---
-    {
-      home: "South Africa", away: "England",
-      start: "2026-12-17T08:00:00Z",
-      venue: "DP World Wanderers Stadium, Johannesburg",
-      series: "England in South Africa, Basil D'Oliveira Trophy (1st Test)",
-      broadcaster: "Sky Sports Cricket"
-    },
-    {
-      home: "South Africa", away: "England",
-      start: "2026-12-26T08:00:00Z",
-      venue: "SuperSport Park, Centurion",
-      series: "England in South Africa, Basil D'Oliveira Trophy (2nd Test, Boxing Day)",
-      broadcaster: "Sky Sports Cricket"
-    },
-    {
-      home: "South Africa", away: "England",
-      start: "2027-01-03T08:30:00Z",
-      venue: "Newlands, Cape Town",
-      series: "England in South Africa, Basil D'Oliveira Trophy (3rd Test, New Year Test)",
-      broadcaster: "Sky Sports Cricket"
-    },
-    // --- Australia in India, Border-Gavaskar Trophy, Jan-Mar 2027 ---
-    {
-      home: "India", away: "Australia",
-      start: "2027-01-21T04:00:00Z",
-      venue: "VCA Stadium, Nagpur",
-      series: "Australia in India, Border-Gavaskar Trophy (1st Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
-    },
-    {
-      home: "India", away: "Australia",
-      start: "2027-01-29T04:00:00Z",
-      venue: "MA Chidambaram Stadium, Chennai",
-      series: "Australia in India, Border-Gavaskar Trophy (2nd Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
-    },
-    {
-      home: "India", away: "Australia",
-      start: "2027-02-11T04:00:00Z",
-      venue: "ACA Stadium, Guwahati",
-      series: "Australia in India, Border-Gavaskar Trophy (3rd Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
-    },
-    {
-      home: "India", away: "Australia",
-      start: "2027-02-19T04:00:00Z",
-      venue: "JSCA International Stadium, Ranchi",
-      series: "Australia in India, Border-Gavaskar Trophy (4th Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
-    },
-    {
-      home: "India", away: "Australia",
-      start: "2027-02-27T04:00:00Z",
-      venue: "Narendra Modi Stadium, Ahmedabad",
-      series: "Australia in India, Border-Gavaskar Trophy (5th Test)",
-      broadcaster: "UK/Ireland broadcaster not yet confirmed — check listings nearer the time"
-    }
+  // The fixtures come from data/schedule.json, which a GitHub job refreshes
+  // every hour from CricketData.org (see scripts/update-schedule.mjs).
+  //
+  // HAND_EDITS is for the things CricketData doesn't know or gets wrong.
+  // Each entry is matched to a Test by home team, away team and start date
+  // (within two days). Use the team names exactly as the site shows them,
+  // with " (w)" for women's teams.
+  //   broadcasters: { sa, au, uk } — channel by country
+  //   broadcaster:  "..."           — a single line of text instead
+  //   start:        "...Z"          — corrects CricketData's start time (GMT)
+  //   hide: true                    — removes a Test from the site
+  const HAND_EDITS = [
+    { home: "South Africa", away: "Australia", date: "2026-10-18",
+      broadcasters: { sa: "SuperSport", au: "Fox Cricket / Kayo Sports", uk: "Sky Sports" } },
+    { home: "South Africa", away: "Australia", date: "2026-10-27",
+      broadcasters: { sa: "SuperSport", au: "Fox Cricket / Kayo Sports", uk: "Sky Sports" } },
+    { home: "South Africa", away: "England", date: "2026-12-17", broadcaster: "Sky Sports Cricket" },
+    { home: "South Africa", away: "England", date: "2026-12-26", broadcaster: "Sky Sports Cricket" },
+    { home: "South Africa", away: "England", date: "2027-01-03", broadcaster: "Sky Sports Cricket" },
+    // CricketData has the MCG Boxing Day Test at 11:30 GMT on 26 Dec; it starts 10:30 local, 23:30 GMT on 25 Dec.
+    { home: "Australia", away: "New Zealand", date: "2026-12-26", start: "2026-12-25T23:30:00Z" }
   ];
+  const DEFAULT_BROADCASTER = "UK/Ireland broadcaster not yet confirmed — check listings nearer the time";
+
+  // Safety net if the hourly update ever stops: drop a Test this long after its start.
   const MATCH_DURATION_MS = (4 * 24 + 10) * 60 * 60 * 1000;
   const CONCURRENT_WINDOW_MS = 4 * 24 * 60 * 60 * 1000;
+  const DAY_MS = 24 * 60 * 60 * 1000;
 
   var statusEl = document.getElementById('status');
   var matchesEl = document.getElementById('matches');
@@ -307,17 +162,23 @@
     var d = new Date(iso);
     return d.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
   }
-  function countdown(iso) {
-    var diff = new Date(iso).getTime() - Date.now();
-    if (diff <= 0) return { live: true };
+  function countdown(m) {
+    var diff = new Date(m.start).getTime() - Date.now();
+    if (diff <= 0 || m.started) return { live: true };
     var days = Math.ceil(diff / 86400000);
     if (days > 0) return { live: false, num: days, label: days === 1 ? 'day to go' : 'days to go' };
     var hours = Math.ceil(diff / 3600000);
     return { live: false, num: hours, label: hours === 1 ? 'hour to go' : 'hours to go' };
   }
 
+  function escapeHtml(s) {
+    var d = document.createElement('div');
+    d.textContent = s == null ? '' : s;
+    return d.innerHTML;
+  }
+
   function renderMatch(m) {
-    var cd = countdown(m.start);
+    var cd = countdown(m);
     var el = document.createElement('article');
     el.className = 'match';
 
@@ -350,60 +211,78 @@
       if (b.au) parts.push('AUS: ' + b.au);
       if (b.uk) parts.push('UK/Ire: ' + b.uk);
       addRow('Watch on', parts.join(' · '));
-    } else if (m.broadcaster) {
-      addRow('Watch on', m.broadcaster);
+    } else {
+      addRow('Watch on', m.broadcaster || DEFAULT_BROADCASTER);
     }
     el.appendChild(dl);
     return el;
   }
 
-  function escapeHtml(s) {
-    var d = document.createElement('div');
-    d.textContent = s == null ? '' : s;
-    return d.innerHTML;
+  function applyHandEdits(m) {
+    var startMs = new Date(m.start).getTime();
+    for (var i = 0; i < HAND_EDITS.length; i++) {
+      var e = HAND_EDITS[i];
+      if (e.home !== m.home || e.away !== m.away) continue;
+      if (Math.abs(new Date(e.date + 'T12:00:00Z').getTime() - startMs) > 2 * DAY_MS) continue;
+      if (e.hide) return null;
+      if (e.start) m.start = e.start;
+      if (e.broadcasters) m.broadcasters = e.broadcasters;
+      if (e.broadcaster) m.broadcaster = e.broadcaster;
+    }
+    if (/^TBC(,\s*TBC)?$/i.test(m.venue || '')) m.venue = 'TBC';
+    return m;
+  }
+
+  function render(schedule) {
+    var now = Date.now();
+    var upcoming = schedule
+      .map(applyHandEdits)
+      .filter(function (m) { return m && !m.ended && new Date(m.start).getTime() + MATCH_DURATION_MS > now; })
+      .sort(function (a, b) { return new Date(a.start) - new Date(b.start); });
+
+    var selected = [];
+    if (upcoming.length) {
+      var soonest = new Date(upcoming[0].start).getTime();
+      selected = upcoming
+        .filter(function (m) { return new Date(m.start).getTime() - soonest <= CONCURRENT_WINDOW_MS; })
+        .slice(0, 2);
+    }
+
+    if (!selected.length) {
+      statusEl.hidden = false;
+    } else {
+      selected.forEach(function (m) { matchesEl.appendChild(renderMatch(m)); });
+    }
+
+    var rest = upcoming.filter(function (m) { return selected.indexOf(m) === -1; });
+    if (rest.length) {
+      var upcomingWrap = document.getElementById('upcoming-wrap');
+      var upcomingList = document.getElementById('upcoming-list');
+      rest.slice(0, 5).forEach(function (m) {
+        var li = document.createElement('li');
+        var teamsSpan = document.createElement('span');
+        teamsSpan.className = 'upcoming-teams';
+        teamsSpan.textContent = m.home + ' v ' + m.away;
+        var dateSpan = document.createElement('span');
+        dateSpan.className = 'upcoming-date';
+        dateSpan.textContent = new Date(m.start).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' });
+        li.appendChild(teamsSpan);
+        li.appendChild(dateSpan);
+        upcomingList.appendChild(li);
+      });
+      upcomingWrap.hidden = false;
+    }
   }
 
   document.getElementById('today').textContent = 'Today: ' + new Date().toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
 
-  var now = Date.now();
-  var upcoming = SCHEDULE
-    .filter(function (m) { return new Date(m.start).getTime() + MATCH_DURATION_MS > now; })
-    .sort(function (a, b) { return new Date(a.start) - new Date(b.start); });
-
-  var selected = [];
-  if (upcoming.length) {
-    var soonest = new Date(upcoming[0].start).getTime();
-    selected = upcoming
-      .filter(function (m) { return new Date(m.start).getTime() - soonest <= CONCURRENT_WINDOW_MS; })
-      .slice(0, 2);
-  }
-
-  if (!selected.length) {
-    statusEl.hidden = false;
-  } else {
-    selected.forEach(function (m) { matchesEl.appendChild(renderMatch(m)); });
-  }
-
-  var selectedStarts = selected.map(function (m) { return m.start; });
-  var rest = upcoming.filter(function (m) { return selectedStarts.indexOf(m.start) === -1; });
-
-  if (rest.length) {
-    var upcomingWrap = document.getElementById('upcoming-wrap');
-    var upcomingList = document.getElementById('upcoming-list');
-    rest.slice(0, 5).forEach(function (m) {
-      var li = document.createElement('li');
-      var teamsSpan = document.createElement('span');
-      teamsSpan.className = 'upcoming-teams';
-      teamsSpan.textContent = m.home + ' v ' + m.away;
-      var dateSpan = document.createElement('span');
-      dateSpan.className = 'upcoming-date';
-      dateSpan.textContent = new Date(m.start).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' });
-      li.appendChild(teamsSpan);
-      li.appendChild(dateSpan);
-      upcomingList.appendChild(li);
+  fetch('data/schedule.json', { cache: 'no-cache' })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (data) { render(data.matches || []); })
+    .catch(function () {
+      statusEl.textContent = "Couldn't load the schedule just now. Please try refreshing.";
+      statusEl.hidden = false;
     });
-    upcomingWrap.hidden = false;
-  }
 </script>
 </body>
 </html>
