@@ -1,0 +1,40 @@
+name: Update Test schedule
+
+on:
+  schedule:
+    - cron: '17 * * * *'   # every hour, at 17 minutes past
+  workflow_dispatch:        # lets you run it by hand from the Actions tab
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update-schedule.mjs'
+      - '.github/workflows/update-schedule.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-schedule
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Fetch Tests from CricketData
+        env:
+          CRICKETDATA_API_KEY: ${{ secrets.CRICKETDATA_API_KEY }}
+        run: node scripts/update-schedule.mjs
+      - name: Save the schedule if it changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/schedule.json
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Update Test schedule from CricketData"
+          git pull --rebase origin main
+          git push
