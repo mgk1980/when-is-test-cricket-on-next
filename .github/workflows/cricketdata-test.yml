@@ -23,12 +23,9 @@ jobs:
           mkdir -p test-output
           if [ -z "$KEY" ]; then echo "NO KEY FOUND" > test-output/ERROR.txt; else
             get () { curl -sS --max-time 30 "https://api.cricapi.com/v1/$1apikey=$KEY" | sed "s/$KEY/REDACTED/g" | jq . > "test-output/$2.json" || echo "failed: $2" >> test-output/ERROR.txt; }
-            get "currentMatches?offset=0&" current-matches
-            get "matches?offset=0&" matches
-            get "series?offset=0&search=South%20Africa&" series-search-south-africa
-            ID=$(jq -r '[.data[]? | select((.name|test("Australia";"i")) and (.name|test("South Africa";"i")))][0].id // empty' test-output/series-search-south-africa.json)
-            echo "picked series id: ${ID:-none}" > test-output/picked-series.txt
-            if [ -n "$ID" ]; then get "series_info?id=$ID&" series-info-aus-in-sa; fi
+            get "series_info?id=0c2de514-946a-4b55-a6e3-4d1d6e892459&" series-info-aus-tour-of-sa-men
+            DID=$(jq -r '[.data.matchList[]? | select(.name|test("1st Test";"i"))][0].id // empty' test-output/series-info-aus-tour-of-sa-men.json)
+            if [ -n "$DID" ]; then get "match_info?id=$DID&" match-info-durban-test; fi
           fi
       - name: Save results to this test branch
         run: |
