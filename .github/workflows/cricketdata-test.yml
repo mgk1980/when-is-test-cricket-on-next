@@ -23,9 +23,11 @@ jobs:
           mkdir -p test-output
           if [ -z "$KEY" ]; then echo "NO KEY FOUND" > test-output/ERROR.txt; else
             get () { curl -sS --max-time 30 "https://api.cricapi.com/v1/$1apikey=$KEY" | sed "s/$KEY/REDACTED/g" | jq . > "test-output/$2.json" || echo "failed: $2" >> test-output/ERROR.txt; }
-            get "series_info?id=0c2de514-946a-4b55-a6e3-4d1d6e892459&" series-info-aus-tour-of-sa-men
-            DID=$(jq -r '[.data.matchList[]? | select(.name|test("1st Test";"i"))][0].id // empty' test-output/series-info-aus-tour-of-sa-men.json)
-            if [ -n "$DID" ]; then get "match_info?id=$DID&" match-info-durban-test; fi
+            get "series?offset=0&" series-all-p0
+            get "series?offset=25&" series-all-p1
+            get "series?offset=0&search=tour%20of%20India&" series-tour-of-india-p0
+            get "series?offset=25&search=tour%20of%20India&" series-tour-of-india-p1
+            get "series?offset=0&search=Women&" series-women-p0
           fi
       - name: Save results to this test branch
         run: |
