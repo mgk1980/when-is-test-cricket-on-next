@@ -1,0 +1,39 @@
+name: CricketData test (does not touch the site)
+
+on:
+  push:
+    branches: [cricketdata-test]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: cricketdata-test
+      - name: Ask CricketData what it knows
+        env:
+          KEY: ${{ secrets.CRICKETDATA_API_KEY }}
+        run: |
+          set -u
+          mkdir -p test-output
+          if [ -z "$KEY" ]; then echo "NO KEY FOUND" > test-output/ERROR.txt; else
+            get () { curl -sS --max-time 30 "https://api.cricapi.com/v1/$1apikey=$KEY" | sed "s/$KEY/REDACTED/g" | jq . > "test-output/$2.json" || echo "failed: $2" >> test-output/ERROR.txt; }
+            get "currentMatches?offset=0&" current-matches
+            get "matches?offset=0&" matches
+            get "series?offset=0&search=South%20Africa&" series-search-south-africa
+            ID=$(jq -r '[.data[]? | select((.name|test("Australia";"i")) and (.name|test("South Africa";"i")))][0].id // empty' test-output/series-search-south-africa.json)
+            echo "picked series id: ${ID:-none}" > test-output/picked-series.txt
+            if [ -n "$ID" ]; then get "series_info?id=$ID&" series-info-aus-in-sa; fi
+          fi
+      - name: Save results to this test branch
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add test-output
+          git commit -m "CricketData test output" || echo "nothing to commit"
+          git push
