@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-10-17T11:39:00.286Z",
+  "discoveredAt": "2026-10-18T09:39:55.328Z",
   "matches": [
     {
       "id": "d9a770df-eca3-4b8a-8368-7a9b842ff42b",
@@ -33,9 +33,9 @@
       "start": "2026-10-18T07:30:00Z",
       "venue": "St George's Park, Gqeberha",
       "series": "Australia in South Africa (2nd Test)",
-      "started": false,
+      "started": true,
       "ended": false,
-      "status": "Match starts at Oct 18, 08:00 GMT"
+      "status": "Day 1: Match start delayed due to wet outfield"
     },
     {
       "id": "e50a9d29-3043-47ef-b9ed-034f79cc6b0b",
