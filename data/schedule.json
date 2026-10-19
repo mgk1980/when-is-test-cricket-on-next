@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-10-18T09:39:55.328Z",
+  "discoveredAt": "2026-10-19T07:50:43.224Z",
   "matches": [
     {
       "id": "d9a770df-eca3-4b8a-8368-7a9b842ff42b",
@@ -79,11 +79,11 @@
       "home": "Afghanistan",
       "away": "Zimbabwe",
       "start": "2026-11-05T05:30:00Z",
-      "venue": "TBC, TBC",
+      "venue": "Sharjah Cricket Stadium, Sharjah",
       "series": "Afghanistan vs Zimbabwe in UAE (1st Test)",
       "started": false,
       "ended": false,
-      "status": "Match starts at Nov 05, 05:30 GMT"
+      "status": "Match starts at Nov 05, 05:00 GMT"
     },
     {
       "id": "0c09b5c9-b9dc-46a4-884b-c9d546ba3b10",
@@ -103,11 +103,11 @@
       "home": "Afghanistan",
       "away": "Zimbabwe",
       "start": "2026-11-13T05:30:00Z",
-      "venue": "TBC, TBC",
+      "venue": "Sharjah Cricket Stadium, Sharjah",
       "series": "Afghanistan vs Zimbabwe in UAE (2nd Test)",
       "started": false,
       "ended": false,
-      "status": "Match starts at Nov 13, 05:30 GMT"
+      "status": "Match starts at Nov 13, 05:00 GMT"
     },
     {
       "id": "49ca06d3-565e-4ab6-a8ef-1beeb4e56e57",
