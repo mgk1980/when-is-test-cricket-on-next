@@ -34,8 +34,8 @@
       "venue": "St George's Park, Gqeberha",
       "series": "Australia in South Africa (2nd Test)",
       "started": true,
-      "ended": false,
-      "status": "Day 5: 2nd Session - Australia trail by 158 runs"
+      "ended": true,
+      "status": "South Africa won by an innings and 31 runs"
     },
     {
       "id": "e50a9d29-3043-47ef-b9ed-034f79cc6b0b",
