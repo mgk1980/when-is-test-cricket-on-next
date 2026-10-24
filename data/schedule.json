@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-10-23T04:56:22.553Z",
+  "discoveredAt": "2026-10-24T01:37:53.376Z",
   "matches": [
     {
       "id": "d9a770df-eca3-4b8a-8368-7a9b842ff42b",
@@ -235,11 +235,11 @@
       "home": "Australia",
       "away": "New Zealand",
       "start": "2026-12-26T11:30:00Z",
-      "venue": "Melbourne Cricket Ground, Melbourne",
+      "venue": "",
       "series": "New Zealand in Australia (3rd Test)",
       "started": false,
       "ended": false,
-      "status": "Match starts at Dec 26, 11:30 GMT"
+      "status": ""
     },
     {
       "id": "ddb979ef-cd30-4152-bed2-630059d364f0",
