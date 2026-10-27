@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-10-26T20:31:31.920Z",
+  "discoveredAt": "2026-10-27T18:45:16.019Z",
   "matches": [
     {
       "id": "d9a770df-eca3-4b8a-8368-7a9b842ff42b",
@@ -47,7 +47,7 @@
       "series": "Australia in South Africa (3rd Test)",
       "started": true,
       "ended": false,
-      "status": "Day 1: 2nd Session - Australia opt to bowl"
+      "status": "Day 1: Stumps - Australia opt to bowl"
     },
     {
       "id": "e690b55f-e5ea-4b28-ac72-323d81d14291",
@@ -59,7 +59,7 @@
       "series": "West Indies in Bangladesh (1st Test)",
       "started": false,
       "ended": false,
-      "status": "Match starts at Oct 28, 03:30 GMT"
+      "status": "Match starts at Oct 28, 04:00 GMT"
     },
     {
       "id": "29f0a681-bd9b-40c4-af2d-cae8b5ad4efb",
@@ -110,6 +110,18 @@
       "status": "Match starts at Nov 13, 05:00 GMT"
     },
     {
+      "id": "f2ccd740-e51f-4cdc-bf0a-fe5c86005503",
+      "seriesId": "7acadb0c-bc4e-4c91-8c47-7bbe53f2227b",
+      "home": "South Africa",
+      "away": "Bangladesh",
+      "start": "2026-11-15T07:30:00Z",
+      "venue": "The Wanderers Stadium, Johannesburg",
+      "series": "Bangladesh in South Africa (1st Test)",
+      "started": false,
+      "ended": false,
+      "status": "Match starts at Nov 15, 07:30 GMT"
+    },
+    {
       "id": "f5e3ea0a-1952-4abc-bde1-597cf73cf330",
       "seriesId": "a67cb0af-300c-4449-8e80-e006301e5706",
       "home": "Pakistan",
@@ -134,6 +146,18 @@
       "status": "Match starts at Nov 19, 22:00 GMT"
     },
     {
+      "id": "a1b375bd-c1c7-42ae-b10a-d67a7b727e87",
+      "seriesId": "7acadb0c-bc4e-4c91-8c47-7bbe53f2227b",
+      "home": "South Africa",
+      "away": "Bangladesh",
+      "start": "2026-11-23T08:00:00Z",
+      "venue": "SuperSport Park, Centurion",
+      "series": "Bangladesh in South Africa (2nd Test)",
+      "started": false,
+      "ended": false,
+      "status": "Match starts at Nov 23, 08:00 GMT"
+    },
+    {
       "id": "c81e7d49-463b-478a-bc28-06608c6466d2",
       "seriesId": "9f0a2527-1508-42b3-9945-4ade13fd4b5a",
       "home": "New Zealand",
@@ -156,6 +180,18 @@
       "started": false,
       "ended": false,
       "status": "Match starts at Dec 09, 02:20 GMT"
+    },
+    {
+      "id": "fc7f7d9f-bcb7-4877-a556-094a9057cddb",
+      "seriesId": "6a3b3216-1fe2-4263-9345-5a25f2dde7fb",
+      "home": "South Africa (w)",
+      "away": "India (w)",
+      "start": "2026-12-09T08:00:00Z",
+      "venue": "St George's Park, Gqeberha",
+      "series": "India Women in South Africa (One-off Test)",
+      "started": false,
+      "ended": false,
+      "status": "Match starts at Dec 09, 08:00 GMT"
     },
     {
       "id": "180e1d99-7962-4254-87be-4388b6fe7a05",
@@ -230,6 +266,30 @@
       "status": "Match starts at Jan 04, 23:30 GMT"
     },
     {
+      "id": "11fe5acf-43ce-4ea8-aa1d-f34e23d3b4fe",
+      "seriesId": "181dfb42-895f-4a4d-8907-94c125df9871",
+      "home": "India",
+      "away": "Australia",
+      "start": "2027-01-21T04:00:00Z",
+      "venue": "Vidarbha Cricket Association Stadium, Nagpur",
+      "series": "Australia in India (1st Test)",
+      "started": false,
+      "ended": false,
+      "status": "Match starts at Jan 21, 04:00 GMT"
+    },
+    {
+      "id": "b022b5dd-0481-42b2-8fe7-576134eeb24c",
+      "seriesId": "181dfb42-895f-4a4d-8907-94c125df9871",
+      "home": "India",
+      "away": "Australia",
+      "start": "2027-01-29T04:00:00Z",
+      "venue": "MA Chidambaram Stadium, Chennai",
+      "series": "Australia in India (2nd Test)",
+      "started": false,
+      "ended": false,
+      "status": "Match starts at Jan 29, 04:00 GMT"
+    },
+    {
       "id": "2e90638b-3247-4bc4-a125-890d428381b1",
       "seriesId": "58ba28ae-add6-44c4-b1d0-236dd9bbf35c",
       "home": "New Zealand",
@@ -240,6 +300,18 @@
       "started": false,
       "ended": false,
       "status": "Match starts at Feb 04, 22:00 GMT"
+    },
+    {
+      "id": "7334d8fe-3f55-4410-9209-893e933ac57b",
+      "seriesId": "181dfb42-895f-4a4d-8907-94c125df9871",
+      "home": "India",
+      "away": "Australia",
+      "start": "2027-02-11T03:30:00Z",
+      "venue": "Barsapara Cricket Stadium, Guwahati",
+      "series": "Australia in India (3rd Test)",
+      "started": false,
+      "ended": false,
+      "status": "Match starts at Feb 11, 03:30 GMT"
     },
     {
       "id": "8ef8ba45-9ff9-4d9c-bf3d-41e6e907678a",
@@ -254,6 +326,30 @@
       "status": "Match starts at Feb 12, 22:00 GMT"
     },
     {
+      "id": "363fdece-5d34-416c-9d67-f23e566a8d9e",
+      "seriesId": "181dfb42-895f-4a4d-8907-94c125df9871",
+      "home": "India",
+      "away": "Australia",
+      "start": "2027-02-19T04:00:00Z",
+      "venue": "JSCA International Stadium Complex, Ranchi",
+      "series": "Australia in India (4th Test)",
+      "started": false,
+      "ended": false,
+      "status": "Match starts at Feb 19, 04:00 GMT"
+    },
+    {
+      "id": "a6af3abf-3082-425b-abb4-bf7bae239b12",
+      "seriesId": "181dfb42-895f-4a4d-8907-94c125df9871",
+      "home": "India",
+      "away": "Australia",
+      "start": "2027-02-27T04:00:00Z",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "series": "Australia in India (5th Test)",
+      "started": false,
+      "ended": false,
+      "status": "Match starts at Feb 27, 04:00 GMT"
+    },
+    {
       "id": "180ab62c-093a-4c7c-86e2-adbe07598727",
       "seriesId": "4a708cd9-0b6e-4315-94cc-c665beaa4acd",
       "home": "Australia",
@@ -264,6 +360,18 @@
       "started": false,
       "ended": false,
       "status": "Match starts at Mar 11, 03:00 GMT"
+    },
+    {
+      "id": "f62dd953-32b1-4e7b-8ecd-a65296ef6a44",
+      "seriesId": "c58c8862-0d1d-413a-88a5-bc84b11e3211",
+      "home": "South Africa (w)",
+      "away": "Australia (w)",
+      "start": "2027-04-08T08:00:00Z",
+      "venue": "Senwes Park, Potchefstroom",
+      "series": "Australia Women in South Africa (One-off Test)",
+      "started": false,
+      "ended": false,
+      "status": "Match starts at Apr 08, 08:00 GMT"
     },
     {
       "id": "0f6593b8-31bd-432b-9a13-d192f4a6548a",
