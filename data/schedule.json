@@ -45,9 +45,9 @@
       "start": "2026-10-27T08:30:00Z",
       "venue": "Newlands, Cape Town",
       "series": "Australia in South Africa (3rd Test)",
-      "started": false,
+      "started": true,
       "ended": false,
-      "status": "Match starts at Oct 27, 08:30 GMT"
+      "status": "Day 1: 2nd Session - Australia opt to bowl"
     },
     {
       "id": "e690b55f-e5ea-4b28-ac72-323d81d14291",
