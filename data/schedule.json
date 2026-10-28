@@ -47,7 +47,7 @@
       "series": "Australia in South Africa (3rd Test)",
       "started": true,
       "ended": false,
-      "status": "Day 1: Stumps - Australia opt to bowl"
+      "status": "Day 2: 1st Session - Australia trail by 272 runs"
     },
     {
       "id": "e690b55f-e5ea-4b28-ac72-323d81d14291",
@@ -57,9 +57,9 @@
       "start": "2026-10-28T03:30:00Z",
       "venue": "Shere Bangla National Stadium, Dhaka",
       "series": "West Indies in Bangladesh (1st Test)",
-      "started": false,
+      "started": true,
       "ended": false,
-      "status": "Match starts at Oct 28, 04:00 GMT"
+      "status": "Day 1: Play stopped due to bad light - Bangladesh opt to bat"
     },
     {
       "id": "29f0a681-bd9b-40c4-af2d-cae8b5ad4efb",
