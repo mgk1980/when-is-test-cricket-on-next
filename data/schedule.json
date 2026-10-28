@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-10-27T18:45:16.019Z",
+  "discoveredAt": "2026-10-28T16:40:54.288Z",
   "matches": [
     {
       "id": "d9a770df-eca3-4b8a-8368-7a9b842ff42b",
@@ -46,8 +46,8 @@
       "venue": "Newlands, Cape Town",
       "series": "Australia in South Africa (3rd Test)",
       "started": true,
-      "ended": false,
-      "status": "Day 2: 1st Session - Australia trail by 272 runs"
+      "ended": true,
+      "status": "Day 2: Stumps - Australia lead by 1 run"
     },
     {
       "id": "e690b55f-e5ea-4b28-ac72-323d81d14291",
@@ -59,7 +59,7 @@
       "series": "West Indies in Bangladesh (1st Test)",
       "started": true,
       "ended": false,
-      "status": "Day 1: Play stopped due to bad light - Bangladesh opt to bat"
+      "status": "Day 1: Stumps - Bangladesh opt to bat"
     },
     {
       "id": "29f0a681-bd9b-40c4-af2d-cae8b5ad4efb",
@@ -235,11 +235,11 @@
       "home": "Australia",
       "away": "New Zealand",
       "start": "2026-12-26T11:30:00Z",
-      "venue": "",
+      "venue": "Melbourne Cricket Ground, Melbourne",
       "series": "New Zealand in Australia (3rd Test)",
       "started": false,
       "ended": false,
-      "status": ""
+      "status": "Match starts at Dec 26, 11:30 GMT"
     },
     {
       "id": "ddb979ef-cd30-4152-bed2-630059d364f0",
