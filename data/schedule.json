@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-10-28T16:40:54.288Z",
+  "discoveredAt": "2026-10-29T15:54:51.914Z",
   "matches": [
     {
       "id": "d9a770df-eca3-4b8a-8368-7a9b842ff42b",
@@ -47,7 +47,7 @@
       "series": "Australia in South Africa (3rd Test)",
       "started": true,
       "ended": false,
-      "status": "Day 2: Stumps - Australia lead by 1 run"
+      "status": "Day 3: 3rd Session - South Africa trail by 3 runs"
     },
     {
       "id": "e690b55f-e5ea-4b28-ac72-323d81d14291",
@@ -59,7 +59,7 @@
       "series": "West Indies in Bangladesh (1st Test)",
       "started": true,
       "ended": false,
-      "status": "Day 2: Rain stops play - West Indies trail by 183 runs"
+      "status": "Day 2: Stumps - West Indies trail by 138 runs"
     },
     {
       "id": "29f0a681-bd9b-40c4-af2d-cae8b5ad4efb",
