@@ -83,12 +83,16 @@ function testsFromSeries(seriesId, data) {
       venue: m.venue || '',
       series: label ? `${seriesName} (${label})` : seriesName,
       started: !!m.matchStarted,
-      ended: !!m.matchEnded,
+      // CricketData sometimes flags a match as ended mid-game. Trust the
+      // status text over the flag when it plainly shows play in progress.
+      ended: !!m.matchEnded && !IN_PROGRESS.test(m.status || ''),
       status: m.status || '',
     });
   }
   return out;
 }
+
+const IN_PROGRESS = /^Day \d|\b(stumps|lunch|tea|innings break|rain stops play|bad light|drinks|session)\b/i;
 
 async function fetchSeriesTests(seriesId) {
   const j = await api('series_info', { id: seriesId });
@@ -157,11 +161,11 @@ async function main() {
     discoveredAt = new Date(now).toISOString();
     console.log(`Full search: ${found.seriesCount} series, ${matches.length} Tests`);
   } else {
-    // Only re-check series with a Test about to start or in progress.
+    // Only re-check series with a Test about to start, in progress, or
+    // recently marked finished (in case the feed marked it ended too soon).
     matches = old.matches.slice();
     const active = new Set(
       matches
-        .filter((m) => !m.ended)
         .filter((m) => {
           const s = Date.parse(m.start);
           return now >= s - 3 * HOUR && now <= s + 6 * DAY;

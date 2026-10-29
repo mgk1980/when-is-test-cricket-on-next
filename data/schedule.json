@@ -46,7 +46,7 @@
       "venue": "Newlands, Cape Town",
       "series": "Australia in South Africa (3rd Test)",
       "started": true,
-      "ended": true,
+      "ended": false,
       "status": "Day 2: Stumps - Australia lead by 1 run"
     },
     {
