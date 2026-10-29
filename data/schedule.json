@@ -43,11 +43,11 @@
       "home": "South Africa",
       "away": "Australia",
       "start": "2026-10-27T08:30:00Z",
-      "venue": "Newlands, Cape Town",
+      "venue": "",
       "series": "Australia in South Africa (3rd Test)",
       "started": true,
       "ended": false,
-      "status": "Day 3: 3rd Session - South Africa lead by 31 runs"
+      "status": "Day 3: Stumps - South Africa lead by 40 runs"
     },
     {
       "id": "e690b55f-e5ea-4b28-ac72-323d81d14291",
@@ -55,11 +55,11 @@
       "home": "Bangladesh",
       "away": "West Indies",
       "start": "2026-10-28T03:30:00Z",
-      "venue": "Shere Bangla National Stadium, Dhaka",
+      "venue": "",
       "series": "West Indies in Bangladesh (1st Test)",
       "started": true,
       "ended": false,
-      "status": "Day 2: Stumps - West Indies trail by 138 runs"
+      "status": ""
     },
     {
       "id": "29f0a681-bd9b-40c4-af2d-cae8b5ad4efb",
