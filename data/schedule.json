@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-10-29T15:54:51.914Z",
+  "discoveredAt": "2026-10-30T14:14:14.109Z",
   "matches": [
     {
       "id": "d9a770df-eca3-4b8a-8368-7a9b842ff42b",
@@ -47,7 +47,7 @@
       "series": "Australia in South Africa (3rd Test)",
       "started": true,
       "ended": false,
-      "status": "Day 3: Stumps - South Africa lead by 40 runs"
+      "status": "Day 4: 3rd Session - South Africa lead by 207 runs"
     },
     {
       "id": "e690b55f-e5ea-4b28-ac72-323d81d14291",
@@ -59,7 +59,7 @@
       "series": "West Indies in Bangladesh (1st Test)",
       "started": true,
       "ended": false,
-      "status": "Day 3: 2nd Session - Bangladesh lead by 27 runs"
+      "status": "Day 3: Stumps - Bangladesh lead by 106 runs"
     },
     {
       "id": "29f0a681-bd9b-40c4-af2d-cae8b5ad4efb",
@@ -127,11 +127,11 @@
       "home": "Pakistan",
       "away": "Sri Lanka",
       "start": "2026-11-17T05:00:00Z",
-      "venue": "Gaddafi Stadium, Lahore",
+      "venue": "",
       "series": "Sri Lanka in Pakistan (2nd Test)",
       "started": false,
       "ended": false,
-      "status": "Match starts at Nov 17, 04:30 GMT"
+      "status": ""
     },
     {
       "id": "163a0512-5f23-4446-b450-fa888e36038e",
@@ -355,7 +355,7 @@
       "home": "Australia",
       "away": "England",
       "start": "2027-03-11T03:00:00Z",
-      "venue": "Melbourne Cricket Ground, Melbourne",
+      "venue": "",
       "series": "Australia vs England, 150th Anniversary One-off Test Match (Only Test)",
       "started": false,
       "ended": false,
