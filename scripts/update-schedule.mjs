@@ -2,15 +2,20 @@
 // that CricketData.org knows about, from about two months ago to about ten
 // months ahead, with whether each one has started or finished.
 //
-// Runs hourly on GitHub (.github/workflows/update-schedule.yml).
+// Runs every 15 minutes on GitHub (.github/workflows/update-schedule.yml),
+// though GitHub often runs scheduled jobs late or skips them.
 // Once a day it does a full search for Test series. In between, it only
 // re-checks series with a Test that is about to start or is in progress,
-// to stay well inside the free plan's 100 requests a day.
+// and spaces those checks out (20 minutes per live series) so a busy day
+// stays inside the free plan's 100 requests. With nothing live it makes
+// no requests at all.
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 
 const KEY = process.env.CRICKETDATA_API_KEY;
 const OUT = 'data/schedule.json';
+const STATE = 'data/updater-state.json';
+const GAP_PER_LIVE_SERIES = 20 * 60e3;
 const API = 'https://api.cricapi.com/v1/';
 const HOUR = 3600e3;
 const DAY = 24 * HOUR;
@@ -144,6 +149,8 @@ async function main() {
 
   let old = null;
   try { old = JSON.parse(await readFile(OUT, 'utf8')); } catch { /* first run */ }
+  let state = {};
+  try { state = JSON.parse(await readFile(STATE, 'utf8')); } catch { /* first run */ }
 
   let matches;
   let discoveredAt = old && old.discoveredAt;
@@ -161,17 +168,26 @@ async function main() {
     discoveredAt = new Date(now).toISOString();
     console.log(`Full search: ${found.seriesCount} series, ${matches.length} Tests`);
   } else {
-    // Only re-check series with a Test about to start, in progress, or
-    // recently marked finished (in case the feed marked it ended too soon).
+    // Only re-check series with a Test about to start or not yet finished.
     matches = old.matches.slice();
     const active = new Set(
       matches
         .filter((m) => {
           const s = Date.parse(m.start);
-          return now >= s - 3 * HOUR && now <= s + 6 * DAY;
+          return !m.ended && now >= s - HOUR && now <= s + 6 * DAY;
         })
         .map((m) => m.seriesId),
     );
+    const gap = GAP_PER_LIVE_SERIES * active.size;
+    const last = Date.parse(state.lastRefreshAt || '') || 0;
+    if (!active.size) {
+      console.log('No Test in progress; nothing to check');
+      return;
+    }
+    if (now - last < gap - 3 * 60e3) {
+      console.log(`Checked ${Math.round((now - last) / 60e3)} min ago; next check due after ${gap / 60e3} min`);
+      return;
+    }
     for (const id of active) {
       try {
         const fresh = await fetchSeriesTests(id);
@@ -180,12 +196,15 @@ async function main() {
         console.log(`Could not refresh series ${id}: ${e.message}`);
       }
     }
+    state.lastRefreshAt = new Date(now).toISOString();
     console.log(`Refreshed ${active.size} active series`);
   }
 
   const out = { discoveredAt, matches: dedupe(matches) };
   await mkdir('data', { recursive: true });
   await writeFile(OUT, JSON.stringify(out, null, 2) + '\n');
+  if (due) state.lastRefreshAt = new Date(now).toISOString();
+  await writeFile(STATE, JSON.stringify(state, null, 2) + '\n');
   console.log(`Wrote ${out.matches.length} Tests; CricketData requests used today: ${hitsToday}`);
 }
 
