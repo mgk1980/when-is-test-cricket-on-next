@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-10-30T14:14:14.109Z",
+  "discoveredAt": "2026-10-31T11:40:02.365Z",
   "matches": [
     {
       "id": "d9a770df-eca3-4b8a-8368-7a9b842ff42b",
@@ -58,8 +58,8 @@
       "venue": "Shere Bangla National Stadium, Dhaka",
       "series": "West Indies in Bangladesh (1st Test)",
       "started": true,
-      "ended": false,
-      "status": "Day 4: Lunch Break - West Indies need 162 runs"
+      "ended": true,
+      "status": "West Indies won by 8 wkts"
     },
     {
       "id": "29f0a681-bd9b-40c4-af2d-cae8b5ad4efb",
