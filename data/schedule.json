@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-11-03T09:18:39.285Z",
+  "discoveredAt": "2026-11-04T09:39:09.897Z",
   "matches": [
     {
       "id": "d9a770df-eca3-4b8a-8368-7a9b842ff42b",
@@ -127,11 +127,11 @@
       "home": "Pakistan",
       "away": "Sri Lanka",
       "start": "2026-11-17T05:00:00Z",
-      "venue": "",
+      "venue": "Gaddafi Stadium, Lahore",
       "series": "Sri Lanka in Pakistan (2nd Test)",
       "started": false,
       "ended": false,
-      "status": ""
+      "status": "Match starts at Nov 17, 04:30 GMT"
     },
     {
       "id": "163a0512-5f23-4446-b450-fa888e36038e",
@@ -355,7 +355,7 @@
       "home": "Australia",
       "away": "England",
       "start": "2027-03-11T03:00:00Z",
-      "venue": "",
+      "venue": "Melbourne Cricket Ground, Melbourne",
       "series": "Australia vs England, 150th Anniversary One-off Test Match (Only Test)",
       "started": false,
       "ended": false,
