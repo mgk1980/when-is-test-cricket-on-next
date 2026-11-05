@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-11-04T09:39:09.897Z",
+  "discoveredAt": "2026-11-05T10:21:37.011Z",
   "matches": [
     {
       "id": "d9a770df-eca3-4b8a-8368-7a9b842ff42b",
@@ -69,9 +69,9 @@
       "start": "2026-11-05T03:30:00Z",
       "venue": "Sylhet International Cricket Stadium, Sylhet",
       "series": "West Indies in Bangladesh (2nd Test)",
-      "started": false,
+      "started": true,
       "ended": false,
-      "status": "Match starts at Nov 05, 03:30 GMT"
+      "status": "Day 1: Play stopped due to bad light - West Indies opt to bat"
     },
     {
       "id": "8ad504bb-250d-41e3-b7cc-12cb65ea6e32",
@@ -81,9 +81,9 @@
       "start": "2026-11-05T05:30:00Z",
       "venue": "Sharjah Cricket Stadium, Sharjah",
       "series": "Afghanistan vs Zimbabwe in UAE (1st Test)",
-      "started": false,
+      "started": true,
       "ended": false,
-      "status": "Match starts at Nov 05, 05:00 GMT"
+      "status": "Day 1: 2nd Session - Zimbabwe opt to bat"
     },
     {
       "id": "0c09b5c9-b9dc-46a4-884b-c9d546ba3b10",
