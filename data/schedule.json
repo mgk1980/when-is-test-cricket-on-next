@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-11-05T10:21:37.011Z",
+  "discoveredAt": "2026-11-06T11:31:49.718Z",
   "matches": [
     {
       "id": "d9a770df-eca3-4b8a-8368-7a9b842ff42b",
@@ -71,7 +71,7 @@
       "series": "West Indies in Bangladesh (2nd Test)",
       "started": true,
       "ended": false,
-      "status": "Day 1: Stumps - West Indies opt to bat"
+      "status": "Day 2: Stumps - Bangladesh trail by 268 runs"
     },
     {
       "id": "8ad504bb-250d-41e3-b7cc-12cb65ea6e32",
@@ -83,7 +83,7 @@
       "series": "Afghanistan vs Zimbabwe in UAE (1st Test)",
       "started": true,
       "ended": false,
-      "status": "Day 1: Stumps - Zimbabwe opt to bat"
+      "status": "Day 2: 3rd Session - Afghanistan trail by 479 runs"
     },
     {
       "id": "0c09b5c9-b9dc-46a4-884b-c9d546ba3b10",
