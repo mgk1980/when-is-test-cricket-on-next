@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-11-12T08:51:15.878Z",
+  "discoveredAt": "2026-11-13T10:57:19.976Z",
   "matches": [
     {
       "id": "d9a770df-eca3-4b8a-8368-7a9b842ff42b",
@@ -105,9 +105,9 @@
       "start": "2026-11-13T05:30:00Z",
       "venue": "Sharjah Cricket Stadium, Sharjah",
       "series": "Afghanistan vs Zimbabwe in UAE (2nd Test)",
-      "started": false,
+      "started": true,
       "ended": false,
-      "status": "Match starts at Nov 13, 05:00 GMT"
+      "status": "Day 1: 2nd Session - Zimbabwe opt to bat"
     },
     {
       "id": "f2ccd740-e51f-4cdc-bf0a-fe5c86005503",
@@ -263,7 +263,7 @@
       "series": "New Zealand in Australia (4th Test)",
       "started": false,
       "ended": false,
-      "status": "Match starts at Jan 04, 23:30 GMT"
+      "status": "Match starts at Jan 03, 23:30 GMT"
     },
     {
       "id": "11fe5acf-43ce-4ea8-aa1d-f34e23d3b4fe",
@@ -299,7 +299,7 @@
       "series": "Sri Lanka in New Zealand (1st Test)",
       "started": false,
       "ended": false,
-      "status": "Match starts at Feb 04, 22:00 GMT"
+      "status": "Match starts at Feb 03, 22:00 GMT"
     },
     {
       "id": "7334d8fe-3f55-4410-9209-893e933ac57b",
@@ -323,7 +323,7 @@
       "series": "Sri Lanka in New Zealand (2nd Test)",
       "started": false,
       "ended": false,
-      "status": "Match starts at Feb 12, 22:00 GMT"
+      "status": "Match starts at Feb 11, 22:00 GMT"
     },
     {
       "id": "363fdece-5d34-416c-9d67-f23e566a8d9e",
