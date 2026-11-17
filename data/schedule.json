@@ -106,8 +106,8 @@
       "venue": "Sharjah Cricket Stadium, Sharjah",
       "series": "Afghanistan vs Zimbabwe in UAE (2nd Test)",
       "started": true,
-      "ended": false,
-      "status": "Day 4: Stumps - Afghanistan need 275 runs"
+      "ended": true,
+      "status": "Zimbabwe won by 57 runs"
     },
     {
       "id": "f2ccd740-e51f-4cdc-bf0a-fe5c86005503",
@@ -119,7 +119,7 @@
       "series": "Bangladesh in South Africa (1st Test)",
       "started": true,
       "ended": false,
-      "status": "Day 2: Stumps - South Africa trail by 113 runs"
+      "status": "Day 3: Stumps - South Africa trail by 14 runs"
     },
     {
       "id": "f5e3ea0a-1952-4abc-bde1-597cf73cf330",
@@ -129,9 +129,9 @@
       "start": "2026-11-17T05:00:00Z",
       "venue": "Rawalpindi Cricket Stadium, Rawalpindi",
       "series": "Sri Lanka in Pakistan (2nd Test)",
-      "started": false,
+      "started": true,
       "ended": false,
-      "status": "Day 1: 1st Session - Pakistan opt to bowl"
+      "status": "Day 1: Stumps - Pakistan lead by 23 runs"
     },
     {
       "id": "163a0512-5f23-4446-b450-fa888e36038e",
