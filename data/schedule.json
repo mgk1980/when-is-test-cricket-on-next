@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-11-19T01:59:55.853Z",
+  "discoveredAt": "2026-11-20T01:02:25.818Z",
   "matches": [
     {
       "id": "d9a770df-eca3-4b8a-8368-7a9b842ff42b",
@@ -141,9 +141,9 @@
       "start": "2026-11-19T22:00:00Z",
       "venue": "Basin Reserve, Wellington",
       "series": "India in New Zealand (1st Test)",
-      "started": false,
+      "started": true,
       "ended": false,
-      "status": "Day 1: 2nd Session - India opt to bowl"
+      "status": "Day 1: Stumps - India opt to bowl"
     },
     {
       "id": "a1b375bd-c1c7-42ae-b10a-d67a7b727e87",
