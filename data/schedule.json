@@ -153,9 +153,9 @@
       "start": "2026-11-23T08:00:00Z",
       "venue": "SuperSport Park, Centurion",
       "series": "Bangladesh in South Africa (2nd Test)",
-      "started": false,
+      "started": true,
       "ended": false,
-      "status": "Match starts at Nov 23, 08:00 GMT"
+      "status": "Day 1: Stumps - South Africa trail by 3 runs"
     },
     {
       "id": "c81e7d49-463b-478a-bc28-06608c6466d2",
