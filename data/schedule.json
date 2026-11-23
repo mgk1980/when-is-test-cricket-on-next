@@ -142,8 +142,8 @@
       "venue": "Basin Reserve, Wellington",
       "series": "India in New Zealand (1st Test)",
       "started": true,
-      "ended": false,
-      "status": "Day 5: 1st Session - New Zealand trail by 202 runs"
+      "ended": true,
+      "status": "Match drawn"
     },
     {
       "id": "a1b375bd-c1c7-42ae-b10a-d67a7b727e87",
