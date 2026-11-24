@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-11-22T23:51:20.690Z",
+  "discoveredAt": "2026-11-24T02:59:35.308Z",
   "matches": [
     {
       "id": "d9a770df-eca3-4b8a-8368-7a9b842ff42b",
@@ -12,42 +12,6 @@
       "started": true,
       "ended": true,
       "status": "Match drawn"
-    },
-    {
-      "id": "51482a19-a41a-494e-82a0-3714b5a77360",
-      "seriesId": "0c2de514-946a-4b55-a6e3-4d1d6e892459",
-      "home": "South Africa",
-      "away": "Australia",
-      "start": "2026-10-09T07:30:00Z",
-      "venue": "Kingsmead, Durban",
-      "series": "Australia in South Africa (1st Test)",
-      "started": true,
-      "ended": true,
-      "status": "Australia won by 214 runs"
-    },
-    {
-      "id": "87c745f1-00b1-4eae-a083-d67fffd80388",
-      "seriesId": "0c2de514-946a-4b55-a6e3-4d1d6e892459",
-      "home": "South Africa",
-      "away": "Australia",
-      "start": "2026-10-18T07:30:00Z",
-      "venue": "St George's Park, Gqeberha",
-      "series": "Australia in South Africa (2nd Test)",
-      "started": true,
-      "ended": true,
-      "status": "South Africa won by an innings and 31 runs"
-    },
-    {
-      "id": "e50a9d29-3043-47ef-b9ed-034f79cc6b0b",
-      "seriesId": "0c2de514-946a-4b55-a6e3-4d1d6e892459",
-      "home": "South Africa",
-      "away": "Australia",
-      "start": "2026-10-27T08:30:00Z",
-      "venue": "Newlands, Cape Town",
-      "series": "Australia in South Africa (3rd Test)",
-      "started": true,
-      "ended": false,
-      "status": "Day 4: Stumps - South Africa lead by 287 runs"
     },
     {
       "id": "e690b55f-e5ea-4b28-ac72-323d81d14291",
