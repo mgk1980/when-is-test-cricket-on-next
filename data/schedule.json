@@ -118,8 +118,8 @@
       "venue": "SuperSport Park, Centurion",
       "series": "Bangladesh in South Africa (2nd Test)",
       "started": true,
-      "ended": false,
-      "status": "Day 2: Stumps - South Africa lead by 403 runs"
+      "ended": true,
+      "status": "South Africa won by an innings and 219 runs"
     },
     {
       "id": "c81e7d49-463b-478a-bc28-06608c6466d2",
