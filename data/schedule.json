@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-11-27T01:07:24.692Z",
+  "discoveredAt": "2026-11-28T01:58:42.599Z",
   "matches": [
     {
       "id": "d9a770df-eca3-4b8a-8368-7a9b842ff42b",
@@ -129,9 +129,9 @@
       "start": "2026-11-27T22:00:00Z",
       "venue": "Hagley Oval, Christchurch",
       "series": "India in New Zealand (2nd Test)",
-      "started": false,
+      "started": true,
       "ended": false,
-      "status": "Day 1: 2nd Session - India opt to bowl"
+      "status": "Day 2: 2nd Session - India trail by 354 runs"
     },
     {
       "id": "514bf902-7ce1-47b7-a653-8dff4166ba64",
